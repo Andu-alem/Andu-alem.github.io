@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+
+    <link rel="stylesheet" type="text/css" href="bootstrap-4.1.3/css/bootstrap.css">
+    <link rel="stylesheet" href="css/style.css">
+    <script src="jquery/jquery.min.js"></script>
+</head>
+<body style="padding:10px; background-color: #1a1a1a;" class="">
+    <div class="text-center bg-dark p-3">
+        <h3 class="text-white font-italic font-weight-bold" >My Chess player</h3>
+    </div>
+    <div class="container-fluid p-2">
+        <button class="btn btn-outline-secondary" id="twoPlayerMode">Two Player Mode</button>
+        <button class="btn btn-outline-secondary offset-4 offset-md-7 offset-xl-9" id="undo">Undo</button>
+        <div class="row m-auto">
+            <div class="col-12 col-lg-3 border pb-lg-5">
+                <h3 class="font-italic text-white border-bottom">Computer:
+                    <span class="checkmate-two text-danger"></span>
+                </h3>
+                <section class="text-success font-weight-bold" id="playerTwoGain">
+                    Collected:
+                </section>
+            </div>
+            <div class="col-12 col-lg-6 border p-2 pt-lg-5 pb-lg-5">
+                <h2  id="checkMate" style = "position : absolute;
+                top : 37%;
+                left : 13%;
+                z-index : 1;
+                transform : rotateZ(0deg);
+                color : red;"></h2>
+                <div class="chess-board d-flex flex-wrap m-auto" id="chessBoard">
+                </div>
+            </div>
+            <div class="col-12 col-lg-3 border pb-lg-5">
+                <h3 class="font-italic text-white border-bottom">Human: 
+                    <span class="checkmate-one text-danger"></span> 
+                </h3>
+                <section class="text-success font-weight-bold" id="playerOneGain">
+                    Collected:
+                </section>
+            </div>
+        </div>
+    </div>
+    <div>
+        
+    </div>
+    <script type="text/javascript" src="js/chess.js"></script>
+    <script type="text/javascript" src="js/index.js"></script>
+    
+</body>
+</html>
