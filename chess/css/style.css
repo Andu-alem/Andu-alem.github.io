@@ -1,0 +1,46 @@
+.chess-board{
+    width: 402px;
+	height: 402px;
+    -webkit-transform: rotateZ(-90deg); /* Safari */
+    transform: rotateZ(-90deg);
+}
+.board-box{
+	box-sizing: border-box;
+    width: 50px;
+	height: 50px;
+    cursor: pointer;
+    padding-top: 15px;
+    -webkit-transform: rotateZ(90deg); /* Safari */
+    transform: rotateZ(90deg);
+}
+.white{
+    background-color: #ffffff;
+}
+.black{
+    background-color: #333333;
+}
+b{
+	font-size: 24px;
+	padding-left: 3px;
+}
+.player1{
+	color: #006600;
+}
+.player2{
+	color: #cc0000;
+}
+@media(max-width: 870px){
+	.chess-board{
+		width: 402px;
+		height: 402px;
+	}
+	.board-box{
+		width: 50px;
+		height: 50px;
+		padding-top: 10px;
+	}
+	b{
+		font-size: 20px;
+		padding-left: 1px;
+	}
+}
