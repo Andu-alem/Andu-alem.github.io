@@ -22,8 +22,8 @@ html, body{
 .carousel-caption{
 	position: absolute;
 	top: 50%;
-	transform: translateY(-55%);
-	-webkit-transform: translateY(-55%);
+	transform: translateY(-53%);
+	-webkit-transform: translateY(-53%);
 }
 .carousel-caption h1{
 	font-size: 500%;
