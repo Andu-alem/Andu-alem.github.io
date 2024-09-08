@@ -15,6 +15,7 @@ window.addEventListener('resize', function(){
 window.addEventListener("load", function(){
 	//hederHandler();
 	toolsPorovider();
+	picTitleAnimation();
 	scrollAnimationEffect();
 	footerListAnimation();
 	footerHAnimation();
@@ -115,5 +116,23 @@ const footerHAnimation = () => {
 	for (let i = 0; i < footerLists.length; i++) {
 		const footerList = footerLists[i];
 		observer.observe(footerList);
+	}
+}
+
+const picTitleAnimation = () => {
+	const titleLists = document.querySelectorAll(".pic-title");
+	const observer = new IntersectionObserver((entries) =>{
+		entries.forEach((entry) => {
+			if (entry.isIntersecting){
+				entry.target.classList.add('bring-title');
+			} else {
+				entry.target.classList.remove('bring-title');
+			}
+		})
+	}, { threshold: 0.2 });
+
+	for (let i = 0; i < titleLists.length; i++) {
+		const titleList = titleLists[i];
+		observer.observe(titleList);
 	}
 }
