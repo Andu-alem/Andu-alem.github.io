@@ -2,7 +2,7 @@ body {
 	width: 94%;
 	margin: auto;
 	font-weight: 400;
-	font-size: 0.95rem;
+	font-size: 17px;
 	line-height: 1.7rem;
 	letter-spacing: 1px;
 	color: #19334d;
@@ -333,6 +333,9 @@ p {
 	transition: all 1s ease-in;
 }
 @media screen and (max-width: 850px){
+	body {
+		width: 98%;
+	}
 	.mini-container {
 		display: block;
 		margin: 30px 10px;
@@ -355,7 +358,7 @@ p {
 		padding: 10px;
 	}
 	.project {
-		width: 100%;
+		width: 96%;
 		margin: 20px 0px;
 	}
 	.project:hover {
