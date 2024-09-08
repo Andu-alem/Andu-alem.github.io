@@ -145,11 +145,26 @@ p {
 }
 
 .image-container {
+	background: url("../img/andi.jpg") 0 -5px;
 	width: 52%;
-	min-height: 300px;
+	height: 420px;
 	border : #ecf2f9;
 	border-right: 1px solid #66cc99;
 	margin-top: 20px;
+}
+.pic-title {
+	color: white;
+	font-size: 30px;
+	font-weight: 900;
+	padding-top: 250px;
+	padding-left: 10px;
+	transform: translateX(-200px);
+	opacity: 0;
+	transition: all 1s ease-out;
+}
+.bring-title {
+	opacity: 1;
+	transform: translateX(0px);
 }
 .profile-img {
 	width: 70%;
@@ -248,7 +263,7 @@ p {
 	box-shadow: 0px 2px 6px 1px #ccc;
 }
 .education {
-	min-height: 400px;
+	min-height: 330px;
 }
 .link {
 	color: #40bf80;
@@ -350,6 +365,7 @@ p {
 	}
 	.image-container {
 		width: 100%;
+		margin-top: 20px;
 	}
 	.profile-img {
 		width: 100%;
