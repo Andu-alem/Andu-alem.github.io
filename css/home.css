@@ -335,6 +335,11 @@ p {
 @media screen and (max-width: 850px){
 	body {
 		width: 98%;
+		margin: auto;
+	}
+	.header {
+		width: 98%;
+		margin: auto;
 	}
 	.mini-container {
 		display: block;
