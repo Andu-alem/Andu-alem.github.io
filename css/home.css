@@ -337,6 +337,9 @@ p {
 		display: block;
 		margin: 30px 10px;
 	}
+	.brand a {
+		font-size: 25px;
+	}
 	.image-container {
 		width: 100%;
 	}
