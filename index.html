@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Andualem Fereja</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="Keywords" content="Developer, frontend, backend, engineer, application">
+	<meta name="Description" content="Andi's portfolio website">
+	<link rel="icon" type="image/x-icon" href="img/png/my-logo.png">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+	<link rel="stylesheet" type="text/css" href="css/home.css">
+	<script type="text/javascript" src="js/index.js"></script>
+</head>
+<body>
+	<header class="header">
+		<div class="menu">
+			<div class="brand">
+				<a href="home.html">Andualem Fereja</a>
+			</div>
+			<div class="navbar-menu" value="true" onclick="menuHandler(this)">
+				<span class="nav-menu-icon"></span>
+			</div>
+		</div>
+		<div class="nav">
+			<ul id="nav-list">
+				<li>
+					<a href="#skills">Skills</a>
+				</li>
+				<li>
+					<a href="#projects">Projects</a>
+				</li>
+				<li>
+					<a href="#credentials">Credentials</a>
+				</li>
+				<li>
+					<a href="#more">More</a>
+				</li>
+			</ul>
+		</div>
+	</header>
+
+	<div class="mini-container profile-container">
+		<div class="image-container">
+			<h1 class="pic-title">Programmer <br> and <br> Electrical Engineer</h1>
+		</div>
+		<div class="profile-detail-container">
+			<p>A computer engineer who has an extensive knowledge and experience in both frontend and backend technology and in mobile app development. Experienced in using cutting edge front end tools like React, Redux, Next.js, MaterialUI, bootstrap, and others and also proficent in a varieties of backend tools and frameworks such as Node.js with Express, django, plain php, mysql, mongoDb, and API technologies. Familiar with version control tools git and github. Critical thinker, quick learner, responsible, result oriented, team player, up todate with latest trends, and passionate on what he is doing.</p>
+		</div>
+	</div>
+
+	<div class="mini-container">
+		<div class="jumbotron">
+			<h2>Some forword</h2>
+			<p class="roboto-light">Technology and programming trends are changing each and every day. New tools, frameworks, approches, and ideas are born everyday. To follow and to be up to date requires a dedication, openness to learn and upgrade, and good foundation on the area. That is the skill and dedication I have, I am passionate about technology and love learning new things. When I am not coding, working, and reading, love to pass the time with my family and friends and by watching movies.</p>
+		</div>
+	</div>
+
+	<div class="mini-container" id="skills">
+		<div class="tools-container">
+			<h2 class="roboto-bold">Languages and Frameworks Known</h2>
+			<div class="tools-known" id="logos">
+			</div>
+		</div>
+	</div>
+
+	<div class="mini-container projects-container card-container" id="projects">
+		<div class="card project">
+			<h2 class="roboto-medium">EventUpadater</h2>
+			<p>A web application in which the user can get and post the upcoming events in the town. Aims to be the platform for all events. <br>Developed using MERN technology stack.</p>
+			<button class="link-button">
+				<a href="https://eventsupcoming.onrender.com/" target="_blank">EventUpdater</a>
+			</button>
+		</div>
+		<div class="card project">
+			<h2 class="roboto-medium">A Chess-App</h2>
+			<p>This program is my implementation of a chess player application. I built the chess engine for the app from scratch just to see how it works. It has all the functionalities of a chess. <br>Built using React.</p>
+			<button class="link-button">
+				<a href="https://react-chess-app-uixz.onrender.com/" target="_blank">Play Chess</a>
+			</button>
+		</div>
+		<div class="card project">
+			<h2 class="roboto-medium">Basic Landing Website</h2>
+			<p>It is an experment and a show case what a landing page may look like for a bussiness. It can be adjusted based on the client's need. <br>Built using Bootstrap + jQuery</p>
+			<button class="link-button">
+				<a href="https://andu-alem.github.io/" target="_blank">Check</a>
+			</button>
+		</div>
+	</div>
+
+	<div class="mini-container" id="credentials">
+		<div class="certificate-container">
+			<h2>Credentials and Education</h2>
+			<div class="certificate">
+				<div class="certificate-box education">
+					<h3>Formal Education</h3>
+					<p>Electrical and Computer Engineering(Computer Engineering Focus)<span> from <em>Dilla University</em></span></p>
+					<a href="certificates/tempo.jpg" target="_blank" class="link">Proof credential</a>
+				</div>
+				<div class="certificate-box">
+					<h3>Certificates</h3>
+					<div>
+						<p>Programming Fundamentals using HTML, CSS, and javascript. from <em>Udacity</em>
+							<br><a href="certificates/programer.pdf" class="link" target="_blank">Proof credential</a>
+						</p>
+					</div>
+					<div>
+						<p>Android Developer Fundamentals using java and kotlin. from <em>Udacity</em>
+							<br><a href="certificates/android-dev.pdf" class="link" target="_blank">Proof credential</a>
+						</p>
+					</div>
+					<div>
+						<p>Data Analysis Fundamentals from <em>Udacity</em>
+							<br><a href="certificates/data-anayist.pdf" class="link" target="_blank">Proof credential</a>
+						</p>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<footer class="footer-container" id="more">
+		<div class="footer">
+			<div class="contacts">
+				<h3 class="contact-header footer-h">Get in touch</h3>
+				<ul class="footer-list">
+					<li><span><img class="icon" src="img/png/phone.png">+251915844540/712527086</span></li>
+					<li><span><img class="icon" src="img/png/gmail.png">andualem.fereja12@gmail.com</span></li>
+					<li><span><img class="icon" src="img/png/github.png"> <a href="https://github.com/Andu-alem/">Github</a>
+					</span></li>
+					<li><span><img class="icon" src="img/png/linkedin.png">
+						<a href="https://linkedin.com/in/andualem-fereja-602484213/">LinkedIn</a>
+					</span></li>
+				</ul>
+			</div>
+			<div class="all-links">
+				<h3 class="footer-links footer-h">More projects..</h3>
+				<ul class="footer-list">
+					<li>
+						<span>
+							<img class="icon" src="img/png/link.png">
+							<a href="https://observant-andualemfereja12.wordpress.com/">Wordpress site</a>
+						</span>
+					</li>
+					<li>
+						<span>
+							<img class="icon" src="img/png/link.png">
+							<a href="https://github.com/Andu-alem/">More projects on Github</a>
+						</span>
+					</li>
+				</ul>
+			</div>
+		</div>
+		<div class="copyright">
+			<p>Andualem Fereja &copy;2024</p>
+		</div>
+	</footer>
+</body>
+</html>
