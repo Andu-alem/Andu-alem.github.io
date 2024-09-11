@@ -63,7 +63,7 @@ function playerOne(boxId, allPieces, childPiece, promotedPiece){
                         return move(eliminationOption.movingPiece, eliminationOption.pieceId, eliminationOption.move_to, eliminationOption.toBeEliminatedPieceId);
                     }
                 }else{
-                    alert("Move not allowed 7")
+                    alert("Move not allowed")
                     movingPiece = null;
                 }
             }
@@ -81,7 +81,7 @@ function playerOne(boxId, allPieces, childPiece, promotedPiece){
                     return move(normalMoveOption.movingPiece, normalMoveOption.pieceId, normalMoveOption.move_to, normalMoveOption.toBeEliminatedPieceId);
                 }
             }else{
-                alert("Move not allowed 4");
+                alert("Move not allowed");
                 movingPiece = null;
             }
         }
@@ -1701,7 +1701,7 @@ function eliminationMove(movingPiece, pos, childPiece) {
                     
                     //setTimeout(computer, 3000);
                 } else {
-                    alert("Move not allowed 01");
+                    alert("Move not allowed");
                     //console.log(" movingPiece ", movingPiece, " and pos", pos);
                     if (isCheckMate()) {
                         return {
@@ -1722,7 +1722,7 @@ function eliminationMove(movingPiece, pos, childPiece) {
             }
             
         }else{
-            alert("Move not allowed 05")
+            alert("Move not allowed")
             return {
                 movingPiece : null
             }
@@ -1745,7 +1745,7 @@ function normalMove(movingPiece, pos, childPiece) {
                }
                 //setTimeout(computer, 3000);
             } else {
-                alert("Move not allowed 02");
+                alert("Move not allowed");
                 if (isCheckMate()) {
                     return {
                         checkMate : true
