@@ -71,7 +71,7 @@ $(document).ready(function(){
     	let innerHtml = $(`#${movedPos}`).html();
 
     	if (lastMove.eliminatedPieceID !== "") {
-    		$(`#${movedPos}`).html(`<b class='${allPieces[lastMove.eliminatedPieceID].player}' id='${lastMove.eliminatedPieceID}'>${allPieces[lastMove.eliminatedPieceID].internalValue}</b>`);
+    		$(`#${movedPos}`).html(`<img id='${lastMove.eliminatedPieceID}' src='${allPieces[lastMove.eliminatedPieceID].internalValue}'/>`);
     		if (allPieces[lastMove.eliminatedPieceID].player === "player1") {
 	            updateData(lastMove.eliminatedPieceID, null, null, null);
 	        } else {
@@ -109,12 +109,12 @@ $(document).ready(function(){
 
         if (pieceToBeEliminatedID !== "") {
             if(isPlayerOneTurn){
-                $("#playerOneGain").append(`<span>&nbsp;${allPieces[pieceToBeEliminatedID].internalValue},</span>`);
+                $("#playerTwoGain").append(`<span>&nbsp;${allPieces[pieceToBeEliminatedID].name},</span>`);
                 playerTwoPieces = playerTwoPieces.filter(function(item){
                     return item !== pieceToBeEliminatedID;
                 });
             }else {
-                $("#playerTwoGain").append(`<span>&nbsp;${allPieces[pieceToBeEliminatedID].name},</span>`);
+                $("#playerOneGain").append(`<span>&nbsp;${allPieces[pieceToBeEliminatedID].name},</span>`);
                 playerOnePieces = playerOnePieces.filter(function(item){
                     return item !== pieceToBeEliminatedID;
                 });
@@ -127,7 +127,7 @@ $(document).ready(function(){
         if (movingPiece.name === "pawn") {
         	let pieceId = promotionMove(nextPosition , movingPieceId);
         	if (pieceId !== null) {
-        		$(`#${nextPosition}`).html(`<b class='${allPieces[pieceId].player}' id='${pieceId}'>${allPieces[pieceId].internalValue}</b>`)
+        		$(`#${nextPosition}`).html(`<img id='${pieceId}' src='${allPieces[pieceId].internalValue}'/>`)
         	}
         }
 
@@ -157,19 +157,19 @@ $(document).ready(function(){
                 if (upgradeTo === "1") {
                     id = `q${movingPieceId.slice(1)}`
                     name = "queen";
-                    value = "Qn";
+                    value = "img/pieces/queen-b.png";
                 } else if (upgradeTo === "2") {
                     id = `c${movingPieceId.slice(1)}`
                     name = "rook";
-                    value = "Ca";
+                    value = "img/pieces/rook-b.png";
                 } else if (upgradeTo === "3") {
                     id = `b${movingPieceId.slice(1)}`
                     name = "bishop";
-                    value = "Bi";
+                    value = "img/pieces/bishop-b.png";
                 } else if (upgradeTo === "4") {
                     id = `h${movingPieceId.slice(1)}`
                     name = "knight";
-                    value = "H";
+                    value = "img/pieces/horse-b.png";
                 }
             } 
         } else{
@@ -179,19 +179,19 @@ $(document).ready(function(){
                 if (upgradeTo === "1") {
                     id = `q${movingPieceId.slice(1)}`
                     name = "queen";
-                    value = "Q";
+                    value = "img/pieces/queen-w.png";
                 } else if (upgradeTo === "2") {
                     id = `c${movingPieceId.slice(1)}`
                     name = "rook";
-                    value = "Ca";
+                    value = "img/pieces/rook-w.png";
                 } else if (upgradeTo === "3") {
                     id = `b${movingPieceId.slice(1)}`
                     name = "bishop";
-                    value = "Bi";
+                    value = "img/pieces/bishop-w.png";
                 } else if (upgradeTo === "4") {
                     id = `h${movingPieceId.slice(1)}`
                     name = "knight";
-                    value = "H";
+                    value = "img/pieces/horse-w.png";
                 }
             }
         }
@@ -221,193 +221,193 @@ $(document).ready(function(){
     	allPieces = {
 			c11 : {
 	    		position: "a1",
-	    		internalValue: "Ca",
+	    		internalValue: "img/pieces/rook-w.png",
 	    		name : "rook",
 	    		player: "player1"
 	    	},
 	    	h11 : {
 	    		position: "b1",
-	    		internalValue: "H",
+	    		internalValue: "img/pieces/horse-w.png",
 	    		name : "knight",
 	    		player: "player1"
 	    	},
 	    	b11 : {
 	    		position: "c1",
-	    		internalValue: "Bi",
+	    		internalValue: "img/pieces/bishop-w.png",
 	    		name : "bishop",
 	    		player: "player1"
 	    	},
 	    	q1 : {
 	    		position: "d1",
-	    		internalValue: "Qn",
+	    		internalValue: "img/pieces/queen-w.png",
 	    		name : "queen",
 	    		player: "player1"
 	    	},
 	    	k1 : {
 	    		position: "e1",
-	    		internalValue: "King",
+	    		internalValue: "img/pieces/king-w.png",
 	    		name : "king",
 	    		player: "player1"
 	    	},
 	    	b12 : {
 	    		position: "f1",
-	    		internalValue: "Bi",
+	    		internalValue: "img/pieces/bishop-w.png",
 	    		name : "bishop",
 	    		player: "player1"
 	    	},
 	    	h12 : {
 	    		position: "g1",
-	    		internalValue: "H",
+	    		internalValue: "img/pieces/horse-w.png",
 	    		name : "knight",
 	    		player: "player1"
 	    	},
 	    	c12 : {
 	    		position: "h1",
-	    		internalValue: "Ca",
+	    		internalValue: "img/pieces/rook-w.png",
 	    		name : "rook",
 	    		player: "player1"
 	    	},
 	    	p11 : {
 	    		position: "a2",
-	    		internalValue: "Pw",
+	    		internalValue: "img/pieces/pawn-w.png",
 	    		name : "pawn",
 	    		player: "player1"
 	    	},
 	    	p12 : {
 	    		position: "b2",
-	    		internalValue: "Pw",
+	    		internalValue: "img/pieces/pawn-w.png",
 	    		name : "pawn",
 	    		player: "player1"
 	    	},
 	    	p13 : {
 	    		position: "c2",
-	    		internalValue: "Pw",
+	    		internalValue: "img/pieces/pawn-w.png",
 	    		name : "pawn",
 	    		player: "player1"
 	    	},
 	    	p14 : {
 	    		position: "d2",
-	    		internalValue: "Pw",
+	    		internalValue: "img/pieces/pawn-w.png",
 	    		name : "pawn",
 	    		player: "player1"
 	    	},
 	    	p15 : {
 	    		position: "e2",
-	    		internalValue: "Pw",
+	    		internalValue: "img/pieces/pawn-w.png",
 	    		name : "pawn",
 	    		player: "player1"
 	    	},
 	    	p16 : {
 	    		position: "f2",
-	    		internalValue: "Pw",
+	    		internalValue: "img/pieces/pawn-w.png",
 	    		name : "pawn",
 	    		player: "player1"
 	    	},
 	    	p17 : {
 	    		position: "g2",
-	    		internalValue: "Pw",
+	    		internalValue: "img/pieces/pawn-w.png",
 	    		name : "pawn",
 	    		player: "player1"
 	    	},
 	    	p18 : {
 	    		position: "h2",
-	    		internalValue: "Pw",
+	    		internalValue: "img/pieces/pawn-w.png",
 	    		name : "pawn",
 	    		player: "player1"
 	    	},
 	    	c21 : {
 	    		position: "a8",
-	    		internalValue: "Ca",
+	    		internalValue: "img/pieces/rook-b.png",
 	    		name : "rook",
 	    		player: "player2"
 	    	},
 	    	h21 : {
 	    		position: "b8",
-	    		internalValue: "H",
+	    		internalValue: "img/pieces/horse-b.png",
 	    		name : "knight",
 	    		player: "player2"
 	    	},
 	    	b21 : {
 	    		position: "c8",
-	    		internalValue: "Bi",
+	    		internalValue: "img/pieces/bishop-b.png",
 	    		name : "bishop",
 	    		player: "player2"
 	    	},
 	    	k2 : {
 	    		position: "e8",
-	    		internalValue: "King",
+	    		internalValue: "img/pieces/king-b.png",
 	    		name : "king",
 	    		player: "player2"
 	    	},
 	    	q2 : {
 	    		position: "d8",
-	    		internalValue: "Qn",
+	    		internalValue: "img/pieces/queen-b.png",
 	    		name : "queen",
 	    		player: "player2"
 	    	},
 	    	b22 : {
 	    		position: "f8",
-	    		internalValue: "Bi",
+	    		internalValue: "img/pieces/bishop-b.png",
 	    		name : "bishop",
 	    		player: "player2"
 	    	},
 	    	h22 : {
 	    		position: "g8",
-	    		internalValue: "H",
+	    		internalValue: "img/pieces/horse-b.png",
 	    		name : "knight",
 	    		player: "player2"
 	    	},
 	    	c22 : {
 	    		position: "h8",
-	    		internalValue: "Ca",
+	    		internalValue: "img/pieces/rook-b.png",
 	    		name : "rook",
 	    		player: "player2"
 	    	},
 	    	p21 : {
 	    		position: "a7",
-	    		internalValue: "Pw",
+	    		internalValue: "img/pieces/pawn-b.png",
 	    		name : "pawn",
 	    		player: "player2"
 	    	},
 	    	p22 : {
 	    		position: "b7",
-	    		internalValue: "Pw",
+	    		internalValue: "img/pieces/pawn-b.png",
 	    		name : "pawn",
 	    		player: "player2"
 	    	},
 	    	p23 : {
 	    		position: "c7",
-	    		internalValue: "Pw",
+	    		internalValue: "img/pieces/pawn-b.png",
 	    		name : "pawn",
 	    		player: "player2"
 	    	},
 	    	p24 : {
 	    		position: "d7",
-	    		internalValue: "Pw",
+	    		internalValue: "img/pieces/pawn-b.png",
 	    		name : "pawn",
 	    		player: "player2"
 	    	},
 	    	p25 : {
 	    		position: "e7",
-	    		internalValue: "Pw",
+	    		internalValue: "img/pieces/pawn-b.png",
 	    		name : "pawn",
 	    		player: "player2"
 	    	},
 	    	p26 : {
 	    		position: "f7",
-	    		internalValue: "Pw",
+	    		internalValue: "img/pieces/pawn-b.png",
 	    		name : "pawn",
 	    		player: "player2"
 	    	},
 	    	p27 : {
 	    		position: "g7",
-	    		internalValue: "Pw",
+	    		internalValue: "img/pieces/pawn-b.png",
 	    		name : "pawn",
 	    		player: "player2"
 	    	},
 	    	p28 : {
 	    		position: "h7",
-	    		internalValue: "Pw",
+	    		internalValue: "img/pieces/pawn-b.png",
 	    		name : "pawn",
 	    		player: "player2"
 	    	}
@@ -451,7 +451,7 @@ $(document).ready(function(){
 	    }
 
 	    for (piece in allPieces){
-	    	$(`#${allPieces[piece].position}`).html(`<b class='${allPieces[piece].player}' id='${piece}'>${allPieces[piece].internalValue}</b>`);
+	    	$(`#${allPieces[piece].position}`).html(`<img id='${piece}' src='${allPieces[piece].internalValue}'/>`);
 	    }
 	}
 });
