@@ -14,10 +14,15 @@
     transform: rotateZ(90deg);
 }
 .white{
-    background-color: #ffffff;
+    background-color: #86592d;
 }
 .black{
-    background-color: #333333;
+    background-color: #8c8c8c;
+}
+img {
+	width: 60%;
+	height: 80%;
+	margin-left: 10px;
 }
 b{
 	font-size: 24px;
