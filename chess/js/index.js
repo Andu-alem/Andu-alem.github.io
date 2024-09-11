@@ -143,7 +143,7 @@ $(document).ready(function(){
             let playagain = confirm("The Game is Over \n Do you want to play again");
             if(playagain){
                 //reload
-                window.location = "file:///C:/Users/andi/Desktop/Web/chessUpdated/index.html";
+                window.location = "chess.html";
             }
         }, 5000);
     }
