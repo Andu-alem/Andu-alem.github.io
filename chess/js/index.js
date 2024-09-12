@@ -28,7 +28,12 @@ $(document).ready(function(){
     		let moveResult;
     		moveResult = playerOne($(this).attr("id"), allPieces, childPiece, promotedPawn);
     		if (moveResult !== undefined) {
-    			updateBoard(moveResult);
+    			if (moveResult.castelingMove !== undefined) {
+					updateBoard(moveResult.castelingMove[0]);
+					updateBoard(moveResult.castelingMove[1]);
+				} else {
+					updateBoard(moveResult);
+				}
     			$(this).attr("style", "border: none;");
     			moveResult = undefined;
     			if (!isTwoPlayerModeOn) {
@@ -108,13 +113,14 @@ $(document).ready(function(){
         allPieces[movingPieceId].position = nextPosition;
 
         if (pieceToBeEliminatedID !== "") {
+        	let pieceName = allPieces[pieceToBeEliminatedID].name;
             if(isPlayerOneTurn){
-                $("#playerTwoGain").append(`<span>&nbsp;${allPieces[pieceToBeEliminatedID].name},</span>`);
+                $("#playerTwoGain").append(`<img class="gain-img" src="${ allPieces[pieceToBeEliminatedID].internalValue }"/>`);
                 playerTwoPieces = playerTwoPieces.filter(function(item){
                     return item !== pieceToBeEliminatedID;
                 });
             }else {
-                $("#playerOneGain").append(`<span>&nbsp;${allPieces[pieceToBeEliminatedID].name},</span>`);
+                $("#playerOneGain").append(`<img class="gain-img" src="${ allPieces[pieceToBeEliminatedID].internalValue }"/>`);
                 playerOnePieces = playerOnePieces.filter(function(item){
                     return item !== pieceToBeEliminatedID;
                 });
@@ -138,7 +144,7 @@ $(document).ready(function(){
 
     function playAgain() {
     	let player = isPlayerOneTurn? "Player One": "Player Two";
-        $(`#checkMate`).html(`Check Mate !!! ${player} Won`)
+        $(`#checkMate`).html(`Check Mate !!! <br> ${player} Won`)
         setTimeout(function() {
             let playagain = confirm("The Game is Over \n Do you want to play again");
             if(playagain){
