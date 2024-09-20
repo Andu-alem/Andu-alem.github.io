@@ -200,22 +200,6 @@ p {
 	font-size: 35px;
 }
 
-.projects-container {
-	padding: 30px;
-	border-radius: 10px;
-}
-.project {
-	background-color: #f7f7f7;
-	padding: 12px;
-	width: 28%;
-	border-radius: 8px;
-	text-align: center;
-	box-shadow: 0 8px 10px 2px #ccc;
-	transition: background-color 0.5s ease-out;
-}
-.project:hover {
-	background-color: #eee;
-}
 .link-button {
 	background-color: #19334d;
 	color: #fff;
@@ -418,17 +402,6 @@ p {
 		width: 94%;
 		text-align: center;
 	}
-	.projects-container {
-		padding: 10px;
-	}
-	.project {
-		width: 96%;
-		margin: 20px 0px;
-	}
-	.project:hover {
-		width: 98%;
-		margin: auto;
-	}
 	.certificate {
 		flex-direction: column;
 	}
@@ -507,12 +480,15 @@ p {
 		height: 100%;
 	}
 	.jumbotron {
-		padding: 2%;
-		margin-top: -520px;
-		font-size: 19px;
+		padding: 4%;
+		margin-top: -500px;
+		font-size: 17px;
 	}
 	.pro {
 		flex-direction: column-reverse;
+	}
+	.pro-center {
+		flex-direction: column;
 	}
 	.pro-description {
 		width: 100%;
