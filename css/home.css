@@ -145,15 +145,13 @@ p {
 }
 
 .image-container {
-	background: url("../img/andi.jpg") 0 -5px;
-	width: 52%;
-	height: 420px;
-	border : #ecf2f9;
-	border-right: 1px solid #66cc99;
+	background: url("../img/andi_profile.jpg") 0 -5px no-repeat;
+	background-size: 90% 400px;
+	width: 47%;
 	margin-top: 20px;
 }
 .pic-title {
-	color: white;
+	color: #ff6600;
 	font-size: 30px;
 	font-weight: 900;
 	padding-top: 250px;
@@ -176,14 +174,30 @@ p {
 	width: 40%;
 }
 
+.jumbotron-container {
+	background: url("../img/bandmember.jpg") 0 -5px no-repeat;
+	background-size: 100% 500px;
+	min-height: 500px;
+	margin: 30px 25px;
+}
+.jumbotron-background {
+	min-height: 500px;
+	background-color: rgba(19, 38, 58, 0.9);
+}
 .jumbotron {
-	background: linear-gradient(#3e80c1, #13263a);
 	border-radius: 15px;
-	color: #f2f2f2;
+	color: white;
 	text-align: center;
-	font-size: 20px;
+	font-size: 22px;
 	font-stretch: expanded;
-	padding: 3%;
+	padding: 5%;
+	margin-top: -500px;
+	opacity: 1;
+	z-index: 10;
+}
+.foreword {
+	color: #ff6600;
+	font-size: 35px;
 }
 
 .projects-container {
@@ -203,7 +217,7 @@ p {
 	background-color: #eee;
 }
 .link-button {
-	background: linear-gradient(#66cc99, #26734d);
+	background-color: #19334d;
 	color: #fff;
 	padding: 7px;
 	font-size: 19px;
@@ -215,7 +229,7 @@ p {
 	color: #fff;
 }
 .link-button > a:hover {
-	color: #19334d;
+	color: #ff6600;
 }
 .tools-container {
 	display: flex;
@@ -263,10 +277,10 @@ p {
 	box-shadow: 0px 2px 6px 1px #ccc;
 }
 .education {
-	min-height: 330px;
+	min-height: 370px;
 }
 .link {
-	color: #40bf80;
+	color: #ff6600;
 	text-decoration: none;
 }
 .link:hover {
@@ -274,7 +288,7 @@ p {
 }
 
 .footer-container {
-	background: linear-gradient(#2c5987, #19334d);
+	background-color: #19334d;
 	display: flex;
 	flex-direction: column;
 	justify-content: space-around;
@@ -456,5 +470,16 @@ p {
 	}
 	.footer {
 		width: 98%;
+	}
+	.jumbotron-container {
+		background-size: 100% 600px;
+	}
+	.jumbotron-background {
+		height: 600px;
+	}
+	.jumbotron {
+		padding: 2%;
+		margin-top: -570px;
+		font-size: 19px;
 	}
 }
