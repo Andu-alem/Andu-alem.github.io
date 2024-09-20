@@ -508,4 +508,14 @@ p {
 		margin-top: -520px;
 		font-size: 19px;
 	}
+	.pro {
+		flex-direction: column-reverse;
+	}
+	.pro-description {
+		width: 100%;
+	}
+	.pro-screenshot {
+		width: 100%;
+		height: 200px;
+	}
 }
