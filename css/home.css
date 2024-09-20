@@ -271,6 +271,9 @@ p {
 	box-shadow: 0 8px 7px 2px #ccc;
 	margin-top: 20px;
 }
+.pro h2 {
+	color: #ff6600;
+}
 .pro-description {
 	width: 47%;
 }
