@@ -154,7 +154,7 @@ p {
 	color: #ff6600;
 	font-size: 30px;
 	font-weight: 900;
-	padding-top: 250px;
+	padding-top: 230px;
 	padding-left: 10px;
 	transform: translateX(-200px);
 	opacity: 0;
@@ -175,7 +175,7 @@ p {
 }
 
 .jumbotron-container {
-	background: url("../img/bandmember.jpg") 0 -5px no-repeat;
+	background: url("../img/tech.jpg") 0 10px no-repeat;
 	background-size: 100% 500px;
 	min-height: 500px;
 	margin: 30px 25px;
@@ -191,7 +191,7 @@ p {
 	font-size: 22px;
 	font-stretch: expanded;
 	padding: 5%;
-	margin-top: -500px;
+	margin-top: -470px;
 	opacity: 1;
 	z-index: 10;
 }
@@ -277,7 +277,7 @@ p {
 	box-shadow: 0px 2px 6px 1px #ccc;
 }
 .education {
-	min-height: 370px;
+	min-height: 340px;
 }
 .link {
 	color: #ff6600;
@@ -475,11 +475,11 @@ p {
 		background-size: 100% 600px;
 	}
 	.jumbotron-background {
-		height: 600px;
+		height: 100%;
 	}
 	.jumbotron {
 		padding: 2%;
-		margin-top: -570px;
+		margin-top: -520px;
 		font-size: 19px;
 	}
 }
