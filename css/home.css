@@ -475,13 +475,14 @@ p {
 	}
 	.jumbotron-container {
 		background-size: 100% 600px;
+		height: 600px;
 	}
 	.jumbotron-background {
 		height: 100%;
 	}
 	.jumbotron {
 		padding: 4%;
-		margin-top: -530px;
+		margin-top: -570px;
 		font-size: 17px;
 	}
 	.pro {
