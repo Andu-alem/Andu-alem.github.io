@@ -1,5 +1,4 @@
 :root {
-	--link-hoover : #306b9c;
 	--main-text-color : #cccccc;
 	--primary-text-color : #306b9c;
 	--secondary-text-color : #79a6d2;
@@ -15,6 +14,7 @@ body {
 	font-size: 17px;
 	line-height: 1.7rem;
 	letter-spacing: 1px;
+	color : #cccccc;
 	color: var(--main-text-color);
 	background-color: #060e14;
 	font-family: "Roboto", sans-serif;
@@ -91,6 +91,7 @@ p {
 	margin-right: 30px;
 	width: 20px;
 	padding-left: 10px;
+	background-color: #306b9c;
 	background-color: var(--primary-text-color);
 	cursor: pointer;
 }
@@ -122,6 +123,7 @@ p {
 .brand a{
 	text-decoration: none;
 	padding-left: 20px;
+	color: #79a6d2;
 	color:  var(--secondary-text-color);
 	font-size: 35px;
 	font-weight: bolder;
@@ -130,6 +132,7 @@ p {
 	display: none;
 }
 .navbar-menu:hover{
+	border : 1px solid #79a6d2;
 	border: 1px solid var(--secondary-text-color);
 }
 .nav{
@@ -147,6 +150,7 @@ p {
 }
 .nav li a{
 	text-decoration: none;
+	color : #306b9c;
 	color: var(--primary-text-color);
 	font-size: 20px;
 	font-weight: bold;
@@ -177,6 +181,7 @@ p {
 	background-image: linear-gradient(200deg, rgba(0,0,0,0), rgba(0,0,0,1));
 }
 .pic-title {
+	color : #306b9c;
 	color: var(--primary-text-color);
 	font-size: 24px;
 	font-weight: 900;
@@ -221,12 +226,14 @@ p {
 	z-index: 10;
 }
 .foreword {
+	color : #306b9c;
 	color: var(--primary-text-color);
 	font-size: 35px;
 }
 
 .link-button {
-	background-color: var(--primary-text-color);
+	color : #306b9c;background-
+	color: var(--primary-text-color);
 	color: #fff;
 	padding: 7px;
 	font-size: 19px;
@@ -278,9 +285,11 @@ p {
 	border-radius: 8px;
 	width: 90%;
 	margin: 20px auto;
+	box-shadow: 0px 2px 6px 1px #0c1b27;
 	box-shadow: 0px 2px 6px 1px var(--shadow-color);
 }
 .pro h2 {
+	color : #306b9c;
 	color: var(--primary-text-color);
 }
 .pro-description {
@@ -312,12 +321,14 @@ p {
 	padding: 10px 20px;
 	margin: 7px 0px;
 	width: 44%;
+	box-shadow: 0px 2px 6px 1px #0c1b27;
 	box-shadow: 0px 2px 6px 1px var(--shadow-color);
 }
 .education {
 	min-height: 340px;
 }
 .link {
+	color: #79a6d2;
 	color: var(--secondary-text-color);
 	text-decoration: none;
 }
@@ -357,12 +368,15 @@ p {
 }
 .footer-list > li > span > a{
 	text-decoration: none;
+	color : #cccccc;
 	color: var(--main-text-color);
 }
 .footer-list > li > span:hover{
+	color : #306b9c;
 	color: var(--primary-text-color);
 }
 .footer-list > li > span > a:hover{
+	color : #306b9c;
 	color: var(--primary-text-color);
 }
 .bring-list {
@@ -376,6 +390,7 @@ p {
 }
 .copyright > p {
 	font-size: 19px;
+	color: #79a6d2;
 	color: var(--secondary-text-color);
 }
 .contact-header {
