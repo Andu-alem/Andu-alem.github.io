@@ -2,6 +2,7 @@ html, body{
 	height: 100%;
 	width: 100%;
 	color: #222;
+    background-color: #fafafa;
 }
 .navbar {
 	padding: .8rem;
@@ -14,6 +15,9 @@ html, body{
 }
 .nav-link {
 	font-size: 1.1em !important;
+}
+.header-background {
+    background-color: #fafafa;
 }
 .carousel-inner img{
 	width:100%;
