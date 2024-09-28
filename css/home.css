@@ -4,7 +4,7 @@ html {
 body {
 	width: 94%;
 	margin: auto;
-	font-weight: 400;
+	font-weight: 300;
 	font-size: 17px;
 	line-height: 1.7rem;
 	letter-spacing: 1px;
@@ -255,7 +255,7 @@ p {
 	box-sizing: border-box;
 	background-color: #f7f7f7;
 	border-radius: 8px;
-	box-shadow: 0 8px 7px 2px #ccc;
+	box-shadow: 0 2px 7px 1px #ccc;
 	margin-top: 20px;
 }
 .pro h2 {
@@ -271,7 +271,6 @@ p {
 .screenshot {
 	width: 100%;
 	height: 100%;
-	box-shadow: 0 0 7px 1px #19334d;
 }
 
 .certificate-container {
@@ -359,8 +358,8 @@ p {
 }
 .contact-header {
 	opacity: 0;
-	transform: translateX(-20px);
-	transition: all 1s ease-out;
+	transform: translateY(-40px);
+	transition: all 0.5s ease-out;
 }
 .footer-links {
 	opacity: 0;
