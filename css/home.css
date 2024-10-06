@@ -1,5 +1,5 @@
 :root {
-	--main-text-color : #ffffff;
+	--main-text-color : white;
 	--primary-text-color : #306b9c;
 	--secondary-text-color : #79a6d2;
 	--shadow-color : #0c1b27;
@@ -14,7 +14,7 @@ body {
 	font-size: 17px;
 	line-height: 1.7rem;
 	letter-spacing: 1px;
-	color : #ffffff;
+	color : white;
 	color: var(--main-text-color);
 	background-color: #060e14;
 	font-family: "Roboto", sans-serif;
