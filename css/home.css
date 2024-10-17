@@ -185,7 +185,7 @@ p {
 	color:  var(--secondary-text-color);
 	font-size: 24px;
 	font-weight: 900;
-	margin-top: -70px;
+	margin-top: -60px;
 	padding-left: 12px;
 	transform: translateY(-400px);
 	opacity: 0;
@@ -218,7 +218,7 @@ p {
 .jumbotron {
 	border-radius: 15px;
 	text-align: center;
-	font-size: 22px;
+	font-size: 21px;
 	font-stretch: expanded;
 	padding: 5%;
 	margin-top: -470px;
