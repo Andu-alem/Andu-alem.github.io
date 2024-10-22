@@ -1,16 +1,6 @@
 
 var isDisplayOn = false;
-window.addEventListener('resize', function(){
-	const mp = matchMedia('(max-width: 840px)');
-	if(!mp.matches){
-		//if screen width > 800px
-		document.getElementById('nav-list').setAttribute('style','display:block');
-		isDisplayOn = true;
-	} else{
-		document.getElementById('nav-list').setAttribute('style','display:none');
-		isDisplayOn = false;
-	}
-});
+var isDisplayOn = false;
 
 function menuHandler(e){
 	const nav = document.querySelector(".nav")
