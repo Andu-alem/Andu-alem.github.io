@@ -12,6 +12,20 @@ window.addEventListener('resize', function(){
 	}
 });
 
+function menuHandler(e){
+	const nav = document.querySelector(".nav")
+	if(!isDisplayOn){
+		nav.classList.add("show-list")
+		//document.getElementById('nav-list').setAttribute('style','display:block;');
+		isDisplayOn = true;
+	}else{
+		nav.classList.remove("show-list")
+		//document.getElementById('nav-list').setAttribute('style','display:none');
+		isDisplayOn = false;
+	}
+	
+}
+
 window.addEventListener("load", function(){
 	//hederHandler();
 	toolsPorovider();
@@ -20,18 +34,6 @@ window.addEventListener("load", function(){
 	footerListAnimation();
 	footerHAnimation();
 })
-
-function menuHandler(e){
-	console.log(e.target)
-	if(!isDisplayOn){
-		document.getElementById('nav-list').setAttribute('style','display:block');
-		isDisplayOn = true;
-	}else{
-		document.getElementById('nav-list').setAttribute('style','display:none');
-		isDisplayOn = false;
-	}
-	
-}
 
 const hederHandler = () => {
 	let lastScrollOffset = 0;
