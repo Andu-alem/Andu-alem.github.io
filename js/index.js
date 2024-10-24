@@ -6,11 +6,9 @@ function menuHandler(e){
 	const nav = document.querySelector(".nav")
 	if(!isDisplayOn){
 		nav.classList.add("show-list")
-		//document.getElementById('nav-list').setAttribute('style','display:block;');
 		isDisplayOn = true;
 	}else{
 		nav.classList.remove("show-list")
-		//document.getElementById('nav-list').setAttribute('style','display:none');
 		isDisplayOn = false;
 	}
 	
@@ -44,7 +42,13 @@ const hederHandler = () => {
 	  lastScrollOffset = top
 	}
 	window.addEventListener('scroll', () => {
-	  handleScrollAnimation();
+	  //handleScrollAnimation();
+	  let t = document.documentElement.scrollTop
+	  let height = document.documentElement.clientHeight
+	  const offsetTop = document.querySelector("#skills").offsetTop
+	  if (offsetTop < t + height - 100) {
+	  	console.log("Entred skills initiate animation")
+	  }
 	})
 }
 
