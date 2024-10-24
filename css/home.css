@@ -81,6 +81,7 @@ body {
 p {
 	font-weight: 400;
 	font-style: normal;
+	font-size: 15px;
 }
 .uparrow {
 	position: fixed;
@@ -219,6 +220,9 @@ p {
 	margin-top: -370px;
 	opacity: 1;
 	z-index: 10;
+}
+.jumbotron p{
+	font-size: 17px;
 }
 .foreword {
 	color : #34d399;
