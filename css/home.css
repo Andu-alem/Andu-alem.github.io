@@ -590,6 +590,8 @@ p {
 @media screen and (max-width: 500px){
 	.header {
 		position: static;
+		width: 100%;
+		margin: auto;
 	}
 	.mini-container {
 		margin-top: 5px;
