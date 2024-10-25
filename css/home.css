@@ -83,6 +83,7 @@ body {
 p {
 	font-weight: 500;
 	font-style: normal;
+	font-size: 15px;
 }
 .uparrow {
 	position: fixed;
@@ -607,8 +608,12 @@ p {
 		width: 100%;
 		margin: auto;
 	}
+	.brand {
+		width: 100%;
+	}
 	.brand a {
 		padding-left: 1px;
+		font-size: 21px;
 	}
 	.mini-container {
 		margin-top: 5px;
@@ -634,6 +639,19 @@ p {
 	}
 	.bring-title {
 		transform: translateY(-10px);
+	}
+	.jumbotron-container {
+		background-size: 100% 470px;
+		height: 450px;
+		margin: 0 2px 25px 2px;
+	}
+	.jumbotron-background {
+		height: 100%;
+	}
+	.jumbotron {
+		padding: 4%;
+		margin-top: -457px;
+		font-size: 15px;
 	}
 	.pros {
 		margin-top: 30px;
