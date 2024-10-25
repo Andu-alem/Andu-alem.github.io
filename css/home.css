@@ -607,6 +607,9 @@ p {
 		width: 100%;
 		margin: auto;
 	}
+	.brand a {
+		padding-left: 1px;
+	}
 	.mini-container {
 		margin-top: 5px;
 		margin-bottom: 40px;
