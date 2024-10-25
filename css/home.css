@@ -1,8 +1,9 @@
 :root {
-	--main-text-color : #fafafa;
-	--primary-text-color : #34d399;
-	--secondary-text-color : #38bdf8;
-	--shadow-color : #0c1b27;
+	--main-text-color : #19334d;
+	--primary-text-color : #209268;
+	--secondary-text-color : #089ddd;
+	--shadow-color : #38bdf8;
+	--bg-color: #fafafa;
 }
 html {
 	scroll-behavior: smooth;
@@ -14,9 +15,10 @@ body {
 	font-size: 16px;
 	line-height: 1.4rem;
 	letter-spacing: 1px;
-	color : #fafafa;
+	color : #19334d;
 	color: var(--main-text-color);
-	background-color: #060e14;
+	background-color: #fafafa;
+	background-color: var(--bg-color);
 	font-family: "Roboto", sans-serif;
 }
 .roboto-thin {
@@ -79,9 +81,8 @@ body {
   font-style: italic;
 }
 p {
-	font-weight: 400;
+	font-weight: 500;
 	font-style: normal;
-	font-size: 15px;
 }
 .uparrow {
 	position: fixed;
@@ -90,7 +91,7 @@ p {
 	color: white;
 	width: 20px;
 	padding-left: 10px;
-	background-color: #38bd21;
+	background-color: #089ddd;
 	background-color: var(--secondary-text-color);
 	cursor: pointer;
 
@@ -106,7 +107,8 @@ p {
 	letter-spacing: 0px;
 	width: 94%;
 	margin: auto;
-	background-color: #060e14;
+	background-color: #fafafa;
+	background-color: var(--bg-color);
 	box-shadow: 0px 0px 1px 0px #060ef0;
 	opacity: 1.0;
 	z-index: 10;
@@ -122,17 +124,25 @@ p {
 }
 .brand a{
 	text-decoration: none;
-	padding-left: 20px;
-	color: #38bdf8;
+	padding-left: 15px;
+	color: #089ddd;
 	color:  var(--secondary-text-color);
 	font-size: 30px;
 	font-weight: bolder;
+}
+.mode-button {
+	border: none;
+	font-size: 14px;
+	font-weight: bold;
+	color: #19334d;
+	border-radius: 10px;
+	margin-left: 4px;
 }
 .navbar-menu{
 	display: none;
 }
 .navbar-menu:hover{
-	border : 1px solid #38bdf8;
+	border : 1px solid #089ddd;
 	border: 1px solid var(--secondary-text-color);
 }
 .nav{
@@ -149,7 +159,7 @@ p {
 }
 .nav li a{
 	text-decoration: none;
-	color : #34d399;
+	color : #209268;
 	color: var(--primary-text-color);
 	font-size: 20px;
 	font-weight: bold;
@@ -178,11 +188,11 @@ p {
 .profile-img-background {
 	height: 315px;
 	width: 80%;
-	background-image: linear-gradient(250deg, rgba(0,0,0,0), rgba(0,0,0,1));
+	background-image: linear-gradient(250deg, rgba(0,0,0,0), rgba(0,0,0,0.5));
 }
 .pic-title {
 	font-family: 'Times New Roman', Times, serif;
-	color: #38bdf8;
+	color: #089ddd;
 	color:  var(--secondary-text-color);
 	font-size: 25px;
 	font-weight: 900;
@@ -223,9 +233,10 @@ p {
 }
 .jumbotron p{
 	font-size: 17px;
+	color: #fafafa;
 }
 .foreword {
-	color : #34d399;
+	color : #209268;
 	color: var(--primary-text-color);
 	font-size: 30px;
 }
@@ -234,17 +245,18 @@ p {
 	background-color: transparent;
 	padding: 7px;
 	font-size: 19px;
-	border: 1px #34d399 solid;
+	border: 2px #34d399 solid;
 	border-radius: 6px;
 }
 .link-button > a {
 	text-decoration: none;
-	color: #34d399;
+	color: #209268;
 	color: var(--primary-text-color);
+	font-size: 15px;
 }
 .link-button:hover {
 	color: #fff;
-	background-color: #34d399;
+	background-color: #209268;
 	background-color: var(--primary-text-color);
 }
 .link-button > a:hover {
@@ -289,11 +301,10 @@ p {
 	border-radius: 8px;
 	width: 90%;
 	margin: 30px auto;
-	box-shadow: 0px 2px 6px 1px #0c1b27;
-	box-shadow: 0px 1px 6px 1px var(--shadow-color);
+	box-shadow: 0px 1px 5px 0px #808080;
 }
 .pro h2 {
-	color : #34d399;
+	color : #209268;
 	color: var(--primary-text-color);
 }
 .pro-description {
@@ -330,26 +341,27 @@ p {
 	margin-left: -32px;
 	margin-top: -15px;
 	border-radius: 50px;
-	background-color: #060e14;
-	border: 3px solid white;
+	background-color: #fafafa;
+	background-color: var(--bg-color);
+	border: 3px solid #38bdf8;
 }
 .certificate-box {
 	padding: 10px 20px;
 	margin: 7px 0px;
 	width: 44%;
-	border-left: 5px white solid;
+	border-left: 5px #38bdf8 solid;
 }
 .education {
 	min-height: 340px;
 }
 .link {
-	color : #34d399;
+	color : #209268;
 	color: var(--primary-text-color);
 	text-decoration: none;
 	font-weight: 700;
 }
 .link:hover {
-	color: #38bdf8;
+	color: #089ddd;
 	color: var(--secondary-text-color);
 }
 
@@ -383,20 +395,20 @@ p {
 .footer-list > li {
 	font-size: 17px;
 	font-weight: 500;	
-	color: #38bdf8;
+	color: #089ddd;
 	color: var(--secondary-text-color);
 }
 .footer-list > li > span > a{
 	text-decoration: none;
-	color: #38bdf8;
+	color: #089ddd;
 	color: var(--secondary-text-color);
 }
 .footer-list > li > span:hover{
-	color : #34d399;
+	color : #209268;
 	color: var(--primary-text-color);
 }
 .footer-list > li > span > a:hover{
-	color : #34d399;
+	color : #209268;
 	color: var(--primary-text-color);
 }
 .bring-list {
@@ -528,7 +540,9 @@ p {
 		width: 30px;
 		height: 3px;
 		margin-left: 5px;
-		box-shadow: 0px 5px 1px white, 0px 15px 1px white, 0px 25px 1px white;
+		box-shadow: 0px 5px 1px #19334d, 0px 15px 1px #19334d, 0px 25px 1px #19334d;
+		box-shadow: 0px 5px 1px var(--main-text-color), 0px 15px 1px var(--main-text-color), 0px 25px 1px var(--main-text-color);
+
 	}
 	.navbar-menu {
 		width: 50px;
