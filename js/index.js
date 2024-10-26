@@ -24,6 +24,17 @@ function menuHandler(e){
 function toggleDarkMode(e) {
 	var mode = e.innerHTML;
 	var r = document.querySelector(':root');
+	if (!r) {
+		var body = document.body;
+		if (mode.trim() === 'Dark') {
+			e.innerHTML = 'Light';
+			body.setAttribute('style','background-color: #0c1b27; color: #f2f2f2');
+		} else {
+			e.innerHTML = 'Dark';
+			body.setAttribute('style','background-color: #fafafa; color: #19334d');
+		}
+		return;
+	}
 
 	if (mode.trim() === 'Dark') {
 		e.innerHTML = 'Light';
