@@ -13,14 +13,14 @@
 	<link rel="stylesheet" type="text/css" href="css/home.css">
 	<script type="text/javascript" src="js/index.js"></script>
 </head>
-<body>
-	<header class="header">
+<body class="bg-color main-text-color">
+	<header class="header bg-color">
 		<div class="menu">
 			<div class="brand">
 				<button class="mode-button" onclick="toggleDarkMode(this)">
 					Dark
 				</button>
-				<a href="home.html">Andualem Fereja</a>
+				<a class="secondary-color" href="home.html">Andualem Fereja</a>
 			</div>
 			<div class="navbar-menu" value="true" onclick="menuHandler(this)">
 				<span class="nav-menu-icon"></span>
@@ -29,16 +29,16 @@
 		<div class="nav">
 			<ul id="nav-list">
 				<li>
-					<a href="#skills">Skills</a>
+					<a class="primary-color" href="#skills">Skills</a>
 				</li>
 				<li>
-					<a href="#projects">Projects</a>
+					<a class="primary-color" href="#projects">Projects</a>
 				</li>
 				<li>
-					<a href="#credentials">Credentials</a>
+					<a class="primary-color" href="#credentials">Credentials</a>
 				</li>
 				<li>
-					<a href="#more">More</a>
+					<a class="primary-color" href="#more">More</a>
 				</li>
 			</ul>
 		</div>
@@ -46,7 +46,7 @@
 	<div class="mini-container profile-container">
 		<div class="image-container">
 			<div class="profile-img-background"></div>
-			<h2 class="pic-title">
+			<h2 class="pic-title secondary-color">
 				<span>Are you Looking for..<br></span>
 			</h2>
 		</div>
@@ -60,7 +60,7 @@
 	<div class="jumbotron-container">
 		<div class="jumbotron-background"></div>
 		<div class="jumbotron">
-			<h2 class="foreword roboto-bold">Some Foreword</h2>
+			<h2 class="foreword roboto-bold primary-color">Some Foreword</h2>
 			<p class="roboto-bold">Technology and programming trends are changing each and every day. New tools, frameworks, approches, and ideas are born everyday. To follow and to be up to date requires a dedication, openness to learn and upgrade, and good foundation on the area. That is the skill and dedication I have, I am passionate about technology and love learning new things. Feel free to meet me.</p>
 		</div>
 	</div>
@@ -79,10 +79,10 @@
 			<div class="pros">
 				<div class="pro">
 					<div class="pro-description">
-						<h2 class="roboto-bold">A Chess-App</h2>
+						<h2 class="roboto-bold primary-color">A Chess-App</h2>
 						<p>The app allows user to choose their opponent Ai or a friend and to choose their prefernce color scheme for the board.It has all the functionalities of a chess. This fully functional web based chess application built using React, tailwindcss and integrated it with an ai chess engine stockfish. </p>
 						<button class="link-button roboto-bold">
-							<a href="https://react-chess-app-uixz.onrender.com/" target="_blank">Play Chess</a>
+							<a class="primary-color" href="https://react-chess-app-uixz.onrender.com/" target="_blank">Play Chess</a>
 						</button>
 					</div>
 					<div class="pro-screenshot">
@@ -94,19 +94,19 @@
 						<img src="img/servead.jpg" class="screenshot">
 					</div>
 					<div class="pro-description">
-						<h2 class="roboto-bold">ServiceAd</h2>
+						<h2 class="roboto-bold primary-color">ServiceAd</h2>
 						<p>A platform where users promote their services and businesses share location/address of their business. Beside promoting their service/business the platform aims to help users to find a service or business near them or by searching the name. <br>Built using Next.js with tailwindcss</p>
 						<button class="link-button roboto-bold">
-							<a href="https://andu-alem.github.io/home.html" target="_blank">Check</a>
+							<a class="primary-color" href="https://andu-alem.github.io/home.html" target="_blank">Check</a>
 						</button>
 					</div>
 				</div>
 				<div class="pro">
 					<div class="pro-description">
-						<h2 class="roboto-bold">EventUpadater</h2>
+						<h2 class="roboto-bold primary-color">EventUpadater</h2>
 						<p>A web application in which the user can get and post the upcoming events in the town. Aims to be the platform for all events. <br>Developed using MERN technology stack.</p>
 						<button class="link-button roboto-bold">
-							<a href="https://eventsupcoming.onrender.com/" target="_blank">EventUpdater</a>
+							<a class="primary-color" href="https://eventsupcoming.onrender.com/" target="_blank">EventUpdater</a>
 						</button>
 					</div>
 					<div class="pro-screenshot">
@@ -118,10 +118,10 @@
 						<img src="img/landing_shot.JPG" class="screenshot">
 					</div>
 					<div class="pro-description">
-						<h2 class="roboto-bold">Basic Landing Website</h2>
+						<h2 class="roboto-bold primary-color">Basic Landing Website</h2>
 						<p>It is an experment and a show case what a landing page may look like for a bussiness. It can be adjusted based on the client's need. <br>Built using Bootstrap + jQuery</p>
 						<button class="link-button roboto-bold">
-							<a href="https://andu-alem.github.io/home.html" target="_blank">Check</a>
+							<a class="primary-color" href="https://andu-alem.github.io/home.html" target="_blank">Check</a>
 						</button>
 					</div>
 				</div>
@@ -136,23 +136,23 @@
 				<div class="certificate-box education">
 					<h3>Formal Education</h3>
 					<p>Electrical and Computer Engineering(Computer Engineering Focus)<span> from <b>Dilla University</b></span></p>
-					<a href="certificates/tempo.jpg" class="link">Proof credential</a>
+					<a href="certificates/tempo.jpg" class="link primary-color">Proof credential</a>
 				</div>
 				<div class="certificate-box">
 					<h3>Certificates</h3>
 					<div>
 						<p>Programming Fundamentals using HTML, CSS, and javascript. from <b>Udacity</b>
-							<br><a href="https://www.udacity.com/certificate/e/32135d0c-6861-11ef-9f30-1763a66b3880" class="link">Proof credential</a>
+							<br><a href="https://www.udacity.com/certificate/e/32135d0c-6861-11ef-9f30-1763a66b3880" class="link primary-color">Proof credential</a>
 						</p>
 					</div>
 					<div>
 						<p>Android Developer Fundamentals using java and kotlin. from <b>Udacity</b>
-							<br><a href="https://www.udacity.com/certificate/e/64e645e6-6794-11ef-8ad4-af48f6ebe7df" class="link">Proof credential</a>
+							<br><a href="https://www.udacity.com/certificate/e/64e645e6-6794-11ef-8ad4-af48f6ebe7df" class="link primary-color">Proof credential</a>
 						</p>
 					</div>
 					<div>
 						<p>Data Analysis Fundamentals from <b>Udacity</b>
-							<br><a href="https://www.udacity.com/certificate/e/b1d22fdc-68c0-11ef-b60f-f79d8fa633f2" class="link">Proof credential</a>
+							<br><a href="https://www.udacity.com/certificate/e/b1d22fdc-68c0-11ef-b60f-f79d8fa633f2" class="link primary-color">Proof credential</a>
 						</p>
 					</div>
 				</div>
@@ -166,11 +166,11 @@
 		<div class="footer">
 			<div class="contacts">
 				<h3 class="contact-header footer-h">Get in touch</h3>
-				<ul class="footer-list">
+				<ul class="footer-list secondary-color">
 					<li><span><img class="icon" src="img/png/phone.png">+251915844540/712527086</span></li>
 					<li><span><img class="icon" src="img/png/gmail.png">andualem.fereja12@gmail.com</span></li>
 					<li><span><img class="icon" src="img/png/linkedin.png">
-						<a href="https://linkedin.com/in/andualem-fereja-602484213/">LinkedIn</a>
+						<a class="secondary-color" href="https://linkedin.com/in/andualem-fereja-602484213/">LinkedIn</a>
 					</span></li>
 				</ul>
 			</div>
@@ -180,20 +180,20 @@
 					<li>
 						<span>
 							<img class="icon" src="img/png/link.png">
-							<a href="https://observant-andualemfereja12.wordpress.com/">Wordpress site</a>
+							<a class="secondary-color" href="https://observant-andualemfereja12.wordpress.com/">Wordpress site</a>
 						</span>
 					</li>
 					<li>
 						<span>
 							<img class="icon" src="img/png/github.png">
-							<a href="https://github.com/Andu-alem/">More projects on Github</a>
+							<a class="secondary-color" href="https://github.com/Andu-alem/">More projects on Github</a>
 						</span>
 					</li>
 				</ul>
 			</div>
 		</div>
 		<div class="copyright">
-			<p>Andualem Fereja &copy;2024</p>
+			<p class="primary-color">Andualem Fereja &copy;2024</p>
 		</div>
 	</footer>
 </body>

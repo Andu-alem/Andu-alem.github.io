@@ -1,35 +1,34 @@
 
 var isDisplayOn = false;
 var isDisplayOn = false;
-
 function menuHandler(e){
-	const nav = document.querySelector(".nav")
+	const nav = document.querySelector(".nav");
 	if(!isDisplayOn){
-		nav.classList.add("show-list")
+		nav.classList.add("show-list");
 		isDisplayOn = true;
 	}else{
-		nav.classList.remove("show-list")
+		nav.classList.remove("show-list");
 		isDisplayOn = false;
 	}
 	
 }
 
 function toggleDarkMode(e) {
-	let mode = e.innerHTML
-	let r = document.querySelector(':root')
+	var mode = e.innerHTML;
+	var r = document.querySelector(':root');
 
 	if (mode.trim() === 'Dark') {
-		e.innerHTML = 'Light'
-		r.style.setProperty('--bg-color', '#0c1b27')
-		r.style.setProperty('--main-text-color', '#f2f2f2')
-		r.style.setProperty('--primary-text-color', '#34d399')
-		r.style.setProperty('--secondary-text-color', '#38bdf8')
+		e.innerHTML = 'Light';
+		r.style.setProperty('--bg-color', '#0c1b27');
+		r.style.setProperty('--main-text-color', '#f2f2f2');
+		r.style.setProperty('--primary-text-color', '#34d399');
+		r.style.setProperty('--secondary-text-color', '#38bdf8');
 	} else {
-		e.innerHTML = 'Dark'
-		r.style.setProperty('--bg-color', '#fafafa')
-		r.style.setProperty('--main-text-color', '#19334d')
-		r.style.setProperty('--primary-text-color', '#209268')
-		r.style.setProperty('--secondary-text-color', '#089ddd')
+		e.innerHTML = 'Dark';
+		r.style.setProperty('--bg-color', '#fafafa');
+		r.style.setProperty('--main-text-color', '#19334d');
+		r.style.setProperty('--primary-text-color', '#209268');
+		r.style.setProperty('--secondary-text-color', '#089ddd');
 	}
 }
 
@@ -43,7 +42,7 @@ window.addEventListener("load", function(){
 })
 
 const hederHandler = () => {
-	let lastScrollOffset = 0;
+	var lastScrollOffset = 0;
 	const headerElement = document.querySelector(".header"); 
 	const displayMenuBar = () => {
 	  headerElement.classList.add('scrolled');
@@ -54,19 +53,19 @@ const hederHandler = () => {
 	const handleScrollAnimation = () => {
 	  const top = document.documentElement.scrollTop;
 	  if(top > (lastScrollOffset + 150)){
-	  	hideMenuBar()
+	  	hideMenuBar();
 	  } else {
-	  	displayMenuBar()
+	  	displayMenuBar();
 	  }
-	  lastScrollOffset = top
+	  lastScrollOffset = top;
 	}
 	window.addEventListener('scroll', () => {
 	  //handleScrollAnimation();
-	  let t = document.documentElement.scrollTop
-	  let height = document.documentElement.clientHeight
-	  const offsetTop = document.querySelector("#skills").offsetTop
+	  var t = document.documentElement.scrollTop;
+	  var height = document.documentElement.clientHeight;
+	  const offsetTop = document.querySelector("#skills").offsetTop;
 	  if (offsetTop < t + height - 100) {
-	  	console.log("Entred skills initiate animation")
+	  	console.log("Entred skills initiate animation");
 	  }
 	})
 }
@@ -110,7 +109,7 @@ const footerListAnimation = () => {
 		})
 	}, { threshold: 0.1 });
 
-	for (let i = 0; i < footerLists.length; i++) {
+	for (var i = 0; i < footerLists.length; i++) {
 		const footerList = footerLists[i];
 		observer.observe(footerList);
 	}
@@ -128,7 +127,7 @@ const footerHAnimation = () => {
 		})
 	}, { threshold: 0.2 });
 
-	for (let i = 0; i < footerLists.length; i++) {
+	for (var i = 0; i < footerLists.length; i++) {
 		const footerList = footerLists[i];
 		observer.observe(footerList);
 	}
@@ -146,7 +145,7 @@ const picTitleAnimation = () => {
 		})
 	}, { threshold: 0.2 });
 
-	for (let i = 0; i < titleLists.length; i++) {
+	for (var i = 0; i < titleLists.length; i++) {
 		const titleList = titleLists[i];
 		observer.observe(titleList);
 	}
