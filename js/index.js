@@ -1,8 +1,16 @@
+var isDisplayOn = false;
+var isDisplayOn = false;
+var intersectionSupported;
 
-var isDisplayOn = false;
-var isDisplayOn = false;
+
+if (!('IntersectionObserver' in window) || !('IntersectionObserverEntry' in window) || !('intersectionRatio' in window.IntersectionObserverEntry.prototype)) {
+	intersectionSupported = false;
+} else {
+	intersectionSupported = true;
+}
+
 function menuHandler(e){
-	const nav = document.querySelector(".nav");
+	const nav = document.getElementsByClassName('nav')[0];
 	if(!isDisplayOn){
 		nav.classList.add("show-list");
 		isDisplayOn = true;
@@ -85,6 +93,10 @@ const toolsPorovider = () => {
 
 const scrollAnimationEffect = () => {
 	const elm = document.querySelector(".tools-known");
+	if (!intersectionSupported) {
+		elm.classList.add('fadeIn');
+		return;
+	}
 	const observer = new IntersectionObserver((entries) =>{
 		entries.forEach((entry) => {
 			if (entry.isIntersecting){
@@ -99,6 +111,15 @@ const scrollAnimationEffect = () => {
 
 const footerListAnimation = () => {
 	const footerLists = document.querySelectorAll(".footer-list");
+
+	if (!intersectionSupported) {
+		for (var i = 0; i < footerLists.length; i++) {
+			const footerList = footerLists[i];
+			footerList.classList.add('bring-list');
+		}
+		return;
+	}
+
 	const observer = new IntersectionObserver((entries) =>{
 		entries.forEach((entry) => {
 			if (entry.isIntersecting){
@@ -117,6 +138,15 @@ const footerListAnimation = () => {
 
 const footerHAnimation = () => {
 	const footerLists = document.querySelectorAll(".footer-h");
+
+	if (!intersectionSupported) {
+		for (var i = 0; i < footerLists.length; i++) {
+			const footerList = footerLists[i];
+			footerList.classList.add('bring-footer-header');
+		}
+		return;
+	}
+
 	const observer = new IntersectionObserver((entries) =>{
 		entries.forEach((entry) => {
 			if (entry.isIntersecting){
