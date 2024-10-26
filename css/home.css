@@ -685,6 +685,7 @@ p {
 		position: static;
 		width: 100%;
 		margin: auto;
+		box-shadow: none;
 	}
 	.brand {
 		width: 100%;
