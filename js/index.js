@@ -36,7 +36,7 @@ function toggleDarkMode(e) {
 window.addEventListener("load", function(){
 	//hederHandler();
 	toolsPorovider();
-	picTitleAnimation();
+	//picTitleAnimation();
 	scrollAnimationEffect();
 	footerListAnimation();
 	footerHAnimation();
