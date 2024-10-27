@@ -144,7 +144,7 @@ function toggleDarkMode(e) {
 	var r = document.querySelector(':root');
 	if (!('getAttributeNames' in r)) {
 		var body = document.body;
-		var header = document.getElementsByClassName('header');
+		var header = document.getElementsByClassName('header')[0];
 		if (mode.trim() === 'Dark') {
 			e.innerHTML = 'Light';
 			body.setAttribute('style','background-color: #0c1b27; color: #f2f2f2');
