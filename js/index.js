@@ -142,7 +142,6 @@ function footerHAnimation(){
 function toggleDarkMode(e) {
 	var mode = e.innerHTML;
 	var r = document.querySelector(':root');
-	alert('getAttributeNames' in r);
 	if (!('getAttributeNames' in r)) {
 		var body = document.body;
 		var header = document.getElementsByClassName('header');
