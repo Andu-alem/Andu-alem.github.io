@@ -11,8 +11,17 @@ window.addEventListener("load", function(){
 	//hederHandler();
 	toolsPorovider();
 	scrollAnimationEffect();
-	footerListAnimation();
-	footerHAnimation();
+	if (!intersectionSupported) {
+		footerHAnimationOld();
+	} else {
+		footerHAnimation();
+	}
+
+	if (!intersectionSupported) {
+		footerListAnimationOld();
+	} else {
+		footerListAnimation();
+	}
 })
 function menuHandler(e){
 	const nav = document.getElementsByClassName('nav')[0];
@@ -85,6 +94,14 @@ function scrollAnimationEffect(){
 	observer.observe(elm);
 }
 
+function footerListAnimationOld(){
+	const footerLists = document.getElementsByClassName("footer-list");
+	for (var i = 0; i < footerLists.length; i++) {
+		const footerList = footerLists[i];
+		footerList.classList.add('bring-list');
+	}
+}
+
 function footerListAnimation(){
 	const footerLists = document.getElementsByClassName("footer-list");
 
@@ -103,12 +120,20 @@ function footerListAnimation(){
 			} else {
 				entry.target.classList.remove('bring-list');
 			}
-		})
+		});
 	}, { threshold: 0.1 });
 
 	for (var i = 0; i < footerLists.length; i++) {
 		const footerList = footerLists[i];
 		observer.observe(footerList);
+	}
+}
+
+function footerHAnimationOld(){
+	const footerLists = document.getElementsByClassName("footer-h");
+	for (var i = 0; i < footerLists.length; i++) {
+		const footerList = footerLists[i];
+		footerList.classList.add('bring-footer-header');
 	}
 }
 
@@ -130,7 +155,7 @@ function footerHAnimation(){
 			} else {
 				entry.target.classList.remove('bring-footer-header');
 			}
-		})
+		});
 	}, { threshold: 0.2 });
 
 	for (var i = 0; i < footerLists.length; i++) {
@@ -158,7 +183,6 @@ function toggleDarkMode(e) {
 	}
 	if (mode.trim() === 'Dark') {
 		e.innerHTML = 'Light';
-		//alert("inside toggle dark mode");
 		r.style.setProperty('--bg-color', '#0c1b27');
 		r.style.setProperty('--main-text-color', '#f2f2f2');
 		r.style.setProperty('--primary-text-color', '#34d399');
