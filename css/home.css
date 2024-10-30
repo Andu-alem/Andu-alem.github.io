@@ -1,6 +1,6 @@
 :root {
 	--main-text-color : #19334d;
-	--primary-text-color : #209268;
+	--primary-text-color : orange;
 	--secondary-text-color : #089ddd;
 	--shadow-color : #38bdf8;
 	--bg-color: #fafafa;
@@ -189,12 +189,13 @@ p {
 	background-size: 80% 320px;
 	width: 47%;
 	margin-top: 20px;
-	border-right: 7px #25a777 solid;
+	border-right: 7px #19334d solid;
+	border-right: 7px var(--main-text-color) solid;
 }
 .profile-img-background {
 	height: 315px;
 	width: 80%;
-	background-image: linear-gradient(230deg, rgba(0,51,102,0), rgba(0,51,102,0.7));
+	background-image: linear-gradient(230deg, rgba(0,51,102,0), rgba(0,51,102,0.8));
 }
 .pic-title {
 	font-size: 22px;
@@ -386,7 +387,7 @@ p {
 	opacity: 1;
 	z-index: 1000;
 	height: 100%;
-	background-image: linear-gradient(300deg, rgba(12, 27, 39,0.5), rgba(12, 27, 39,1))
+	background-image: linear-gradient(300deg, rgba(12, 27, 39,0.6), rgba(12, 27, 39,1))
 }
 .project-description h2{
 	color: orange;
@@ -418,9 +419,9 @@ p {
 }
 .link-button {
 	background-color: transparent;
-	padding: 5px;
+	padding: 5px 7px;
 	font-size: 19px;
-	border: 2px #34d399 solid;
+	border: 1px white solid;
 	border-radius: 6px;
 	margin-top: -2vh;
 }
@@ -810,9 +811,11 @@ p {
 		margin-top: 15px;
 		margin-left: 10px;
 	}
-	.link-button {
-		margin-top: 5px;
-		margin-left: 25vw;
+	.link-button-container {
+		padding-top: 10px;
+		display: flex;
+		flex-direction: row;
+		justify-content: center;
 	}
 	.footer-container {
 		margin: 0px;

@@ -185,13 +185,13 @@ function toggleDarkMode(e) {
 		e.innerHTML = 'Light';
 		r.style.setProperty('--bg-color', '#0c1b27');
 		r.style.setProperty('--main-text-color', '#f2f2f2');
-		r.style.setProperty('--primary-text-color', '#34d399');
+		//r.style.setProperty('--primary-text-color', '#34d399');
 		r.style.setProperty('--secondary-text-color', '#38bdf8');
 	} else {
 		e.innerHTML = 'Dark';
 		r.style.setProperty('--bg-color', '#fafafa');
 		r.style.setProperty('--main-text-color', '#19334d');
-		r.style.setProperty('--primary-text-color', '#209268');
+		//r.style.setProperty('--primary-text-color', '#209268');
 		r.style.setProperty('--secondary-text-color', '#089ddd');
 	}
 }
