@@ -149,10 +149,6 @@ p {
 .navbar-menu{
 	display: none;
 }
-.navbar-menu:hover{
-	border : 1px solid #089ddd;
-	border: 1px solid var(--secondary-text-color);
-}
 .nav{
 	padding-top: 0px;
 	padding-right: 50px;
