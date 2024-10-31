@@ -22,7 +22,7 @@ body {
 	color: var(--main-text-color);
 }
 .primary-color {
-	color: #209268;
+	color: orange;
 	color: var(--primary-text-color);
 }
 .secondary-color {
