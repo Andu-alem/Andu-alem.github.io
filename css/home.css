@@ -472,8 +472,8 @@ p {
 	font-weight: bold;
 }
 .link:hover {
-	color: #089ddd;
-	color: var(--secondary-text-color);
+	color: #19334d;
+	color: var(--main-text-color);
 }
 
 .footer-container {
