@@ -36,7 +36,7 @@ function menuHandler(e){
 }
 
 function toolsPorovider(){
-	const logos = ["web.png","mern.png","next.png", "node.png", "bootstrap.png","django.jfif", "java.png", "php.png", "mysql.png", "git_github.png", "android.png", "ts.png"];
+	const logos = ["web.png","mern.png","next.png", "node.png", "react+redux.png", "vue.png", "laravel.png", "tailwind.png", "bootstrap.png", "react-native.png", "django.jfif", "java.png", "php.png", "mysql.png", "git_github.png", "android.png", "ts.png", "api.png"];
 	var node = document.getElementById("logos");
 
 	for (var i = 0; i < logos.length; i++) {

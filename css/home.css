@@ -93,9 +93,9 @@ body {
   font-style: italic;
 }
 p {
-	font-weight: 500;
+	font-weight: 400;
 	font-style: normal;
-	font-size: 15px;
+	font-size: 14px;
 }
 .uparrow {
 	position: fixed;
@@ -107,6 +107,7 @@ p {
 	background-color: #089ddd;
 	background-color: var(--secondary-text-color);
 	cursor: pointer;
+	border-radius: 10px;
 
 }
 .header {
@@ -137,7 +138,7 @@ p {
 }
 .mode-button {
 	border: none;
-	font-size: 14px;
+	font-size: 12px;
 	font-weight: bold;
 	color: #19334d;
 	border-radius: 10px;
@@ -163,7 +164,7 @@ p {
 }
 .nav li a{
 	text-decoration: none;
-	font-size: 20px;
+	font-size: 17px;
 	font-weight: bold;
 }
 .nav li a:hover{
@@ -194,7 +195,7 @@ p {
 	background-image: linear-gradient(230deg, rgba(0,51,102,0), rgba(0,51,102,0.8));
 }
 .pic-title {
-	font-size: 22px;
+	font-size: 17px;
 	font-weight: bolder;
 	margin-top: -50px;
 	padding-left: 12px;
@@ -292,10 +293,12 @@ p {
 	background-size: 100% 400px;
 	min-height: 400px;
 	margin: 30px 25px;
+	border-radius: 20px;
 }
 .jumbotron-background {
 	min-height: 400px;
 	background-color: rgba(19, 38, 58, 0.9);
+	border-radius: 20px;
 }
 .jumbotron {
 	border-radius: 15px;
@@ -308,11 +311,11 @@ p {
 	z-index: 10;
 }
 .jumbotron p{
-	font-size: 17px;
+	font-size: 15px;
 	color: #fafafa;
 }
 .foreword {
-	font-size: 30px;
+	font-size: 25px;
 }
 
 .tools-container {
@@ -339,11 +342,12 @@ p {
 	opacity: 1;
 }
 .logo {
-	width: 11%;
-	height: 70px;
+	width: 7%;
+	height: 50px;
 	padding: 5px;
 	margin: 2px;
 	box-shadow: 0px 0px 0px 1px #808080;
+	border-radius: 5px;
 }
 .projects > h2 {
 	text-align: center;
@@ -357,6 +361,7 @@ p {
 	height: 62vh;
 	margin-bottom: 30px;
 	box-shadow: 0px 1px 3px 1px #808080;
+	border-radius: 20px;
 }
 .project-one {
 	background: url("../img/chessapp_shot.JPG") 0 -5px repeat;
@@ -382,17 +387,18 @@ p {
 	opacity: 1;
 	z-index: 1000;
 	height: 100%;
-	background-image: linear-gradient(300deg, rgba(12, 27, 39,0.6), rgba(12, 27, 39,1))
+	background-image: linear-gradient(300deg, rgba(12, 27, 39,0.6), rgba(12, 27, 39,1));
+	border-radius: 20px;
 }
 .project-description h2{
 	color: orange;
 	font-weight: bold;
-	font-size: 5vh;
+	font-size: 22px;
 	line-height: 2rem;
 }
 .project-description p{
 	color: white;
-	font-weight: 700;
+	font-weight: 500;
 	margin-top: -2vh;
 }
 .project-pic {
@@ -415,14 +421,14 @@ p {
 .link-button {
 	background-color: transparent;
 	padding: 5px 7px;
-	font-size: 19px;
+	font-size: 15px;
 	border: 1px white solid;
 	border-radius: 6px;
 	margin-top: -2vh;
 }
 .link-button > a {
 	text-decoration: none;
-	font-size: 15px;
+	font-size: 14px;
 }
 .link-button:hover {
 	color: #fff;
@@ -496,7 +502,7 @@ p {
 }
 .footer > div > h3{
 	padding-left: 45px;
-	font-size: 20px;
+	font-size: 17px;
 }
 .footer-list {
 	list-style-type: none;
@@ -508,7 +514,7 @@ p {
 	transition: transform 1s ease-out;
 }
 .footer-list > li {
-	font-size: 17px;
+	font-size: 15px;
 	font-weight: 500;
 }
 .footer-list > li > span > a{
@@ -528,13 +534,13 @@ p {
 	transform: translateY(0px);
 }
 .icon {
-	width: 20px;
-	height: 20px;
+	width: 17px;
+	height: 17px;
 	margin-right: 10px;
 	border-radius: 4px;
 }
 .copyright > p {
-	font-size: 17px;
+	font-size: 15px;
 	font-weight: 700;
 }
 .contact-header {
@@ -712,13 +718,15 @@ p {
 	.project {
 		background-repeat: no-repeat;
 		background-size: 100% 100%;
-		height: 80vh;
+		height: 55vh;
+		border-radius: 20px;
 	}
 	.project-description {
-		margin-top: -80vh;
+		margin-top: -55vh;
 		height: 100%;
 		width:70%;
 		padding-top: 4vh;
+		border-radius: 20px;
 	}
 	.project-two > .project-description {
 		margin-left: 30%;
@@ -753,11 +761,13 @@ p {
 		padding-left: 0px;
 	}
 	.image-container {
-		background-size: 100% 310px;
+		background-size: 100% 250px;
+		border-radius: 15px;
 	}
 	.profile-img-background {
 		width: 100%;
-		height: 270px;
+		height: 245px;
+		border-radius: 15px;
 	}
 	.profile-detail-container {
 		width: 100%;
@@ -800,7 +810,7 @@ p {
 	}
 	.project-description h2{
 		text-align: center;
-		font-size: 5vh;
+		font-size: 20px;
 	}
 	.pro-description {
 		margin-top: 15px;
