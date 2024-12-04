@@ -12,7 +12,7 @@ body {
 	width: 92%;
 	margin: auto;
 	font-weight: 400;
-	font-size: 15px;
+	font-size: 14px;
 	line-height: 1.4rem;
 	letter-spacing: 1px;
 	font-family: "Roboto", sans-serif;
@@ -303,7 +303,7 @@ p {
 .jumbotron {
 	border-radius: 15px;
 	text-align: center;
-	font-size: 20px;
+	font-size: 15px;
 	font-stretch: expanded;
 	padding: 5%;
 	margin-top: -370px;
@@ -313,9 +313,10 @@ p {
 .jumbotron p{
 	font-size: 15px;
 	color: #fafafa;
+	font-weight: 500;
 }
 .foreword {
-	font-size: 25px;
+	font-size: 22px;
 }
 
 .tools-container {
@@ -349,7 +350,7 @@ p {
 	box-shadow: 0px 0px 0px 1px #808080;
 	border-radius: 5px;
 }
-.projects > h2 {
+.projects > h3 {
 	text-align: center;
 }
 .projects {
@@ -398,7 +399,7 @@ p {
 }
 .project-description p{
 	color: white;
-	font-weight: 500;
+	font-weight: 400;
 	margin-top: -2vh;
 }
 .project-pic {
@@ -771,6 +772,7 @@ p {
 	}
 	.profile-detail-container {
 		width: 100%;
+		text-align: center;
 	}
 	.pic-title {
 		-moz-transform: translateY(-20px);
@@ -807,6 +809,7 @@ p {
 	}
 	.project-description {
 		width: 100%;
+		text-align: center;
 	}
 	.project-description h2{
 		text-align: center;
