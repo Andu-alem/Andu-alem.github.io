@@ -1,9 +1,9 @@
 :root {
-	--main-text-color : #19334d;
+	--main-text-color : #f2f2f2;
 	--primary-text-color : orange;
 	--secondary-text-color : #089ddd;
 	--shadow-color : #38bdf8;
-	--bg-color: #fafafa;
+	--bg-color: #18181b;
 }
 html {
 	scroll-behavior: smooth;
@@ -18,7 +18,7 @@ body {
 	font-family: "Roboto", sans-serif;
 }
 .main-text-color {
-	color : #19334d;
+	color : #f2f2f2;
 	color: var(--main-text-color);
 }
 .primary-color {
@@ -30,7 +30,7 @@ body {
 	color: var(--secondary-text-color);
 }
 .bg-color {
-	background-color: #fafafa;
+	background-color: #18181b;
 	background-color: var(--bg-color);
 }
 .roboto-thin {
@@ -360,7 +360,8 @@ p {
 .project {
 	width: 100%;
 	height: 62vh;
-	margin-bottom: 30px;
+	margin-top: 20px;
+	margin-bottom: 55px;
 	box-shadow: 0px 1px 3px 1px #808080;
 	border-radius: 20px;
 }
@@ -739,6 +740,9 @@ p {
 		padding-top: 4vh;
 		border-radius: 20px;
 	}
+	.project-five > .project-description {
+		margin-left: 30%;
+	}
 	.project-two > .project-description {
 		margin-left: 30%;
 	}
@@ -810,6 +814,9 @@ p {
 	.project {
 		background-size: 100% 100%;
 		background-repeat: no-repeat;
+	}
+	.project-five > .project-description {
+		margin-left: 0;
 	}
 	.project-two > .project-description {
 		margin-left: 0;

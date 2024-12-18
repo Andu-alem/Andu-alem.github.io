@@ -176,14 +176,14 @@ function toggleDarkMode(e) {
 			header.setAttribute('style','background-color: #0c1b27; color: #f2f2f2');
 		} else {
 			e.innerHTML = 'Dark';
-			body.setAttribute('style','background-color: #fafafa; color: #19334d');
-			header.setAttribute('style','background-color: #fafafa; color: #19334d');
+			body.setAttribute('style','background-color: #fafafa; color: #18181b');
+			header.setAttribute('style','background-color: #fafafa; color: #18181b');
 		}
 		return;
 	}
 	if (mode.trim() === 'Dark') {
 		e.innerHTML = 'Light';
-		r.style.setProperty('--bg-color', '#0c1b27');
+		r.style.setProperty('--bg-color', '#18181b');
 		r.style.setProperty('--main-text-color', '#f2f2f2');
 		//r.style.setProperty('--primary-text-color', '#34d399');
 		r.style.setProperty('--secondary-text-color', '#38bdf8');
