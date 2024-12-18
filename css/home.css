@@ -297,7 +297,6 @@ p {
 	border-radius: 15px;
 	text-align: center;
 	font-size: 15px;
-	font-stretch: expanded;
 	padding: 5%;
 	margin-top: -370px;
 	opacity: 1;
@@ -368,11 +367,15 @@ p {
 	background-size: 50% 100%;
 }
 .project-four {
-	background: url("../img/landing_shot.JPG") 0 -5px repeat;
+	background: url("../img/portfolio-2.jpg") 0 -5px repeat;
 	background-size: 50% 100%;
 }
 .project-five {
 	background: url("../img/newform.jpg") 0 -5px repeat;
+	background-size: 50% 100%;
+}
+.project-six {
+	background: url("../img/landing_shot.JPG") 0 -5px repeat;
 	background-size: 50% 100%;
 }
 .project-description {
