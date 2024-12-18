@@ -380,6 +380,10 @@ p {
 	background: url("../img/landing_shot.JPG") 0 -5px repeat;
 	background-size: 50% 100%;
 }
+.project-five {
+	background: url("../img/newform.jpg") 0 -5px repeat;
+	background-size: 50% 100%;
+}
 .project-description {
 	box-sizing: border-box;
 	width: 50%;
@@ -407,11 +411,17 @@ p {
 	width: 100%;
 	background-image: linear-gradient(250deg, rgba(0,51,102,0), rgba(0, 51, 102, 0.2))
 }
+.project-five > .project-description {
+	margin-left: 50%;
+}
 .project-two > .project-description {
 	margin-left: 50%;
 }
 .project-four > .project-description {
 	margin-left: 50%;
+}
+.project-five > .project-pic {
+	background-image: linear-gradient(100deg, rgba(0,51,102,0), rgba(12, 27, 39,0.3))
 }
 .project-two > .project-pic {
 	background-image: linear-gradient(100deg, rgba(0,51,102,0), rgba(12, 27, 39,0.3))
