@@ -119,7 +119,7 @@ p {
 	min-height: 40px;
 	word-spacing: 0px;
 	letter-spacing: 0px;
-	width: ;
+	width: 94%;
 	margin: auto;
 	box-shadow: 0px 0px 1px 0px #060ef0;
 	opacity: 1.0;
@@ -579,9 +579,8 @@ p {
 		margin: auto;
 	}
 	.header {
+		width: 94%;
 		margin: auto;
-		flex-direction: column;
-		align-items: flex-start;
 	}
 	.mini-container {
 		display: block;
@@ -659,6 +658,10 @@ p {
 	.nav {
 		padding-right: 3px;
 		margin-top: 0px;
+	}
+	.header {
+		flex-direction: column;
+		align-items: flex-start;
 	}
 	.nav-menu-icon{
 		display: block;
