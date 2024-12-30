@@ -129,6 +129,10 @@ p {
 }
 .brand{
 	padding-top: 15px;
+	display: flex;
+	flex-direction: row;
+	justify-content: flex-start;
+	align-items: center;
 }
 .brand a{
 	text-decoration: none;
@@ -136,16 +140,30 @@ p {
 	font-size: 30px;
 	font-weight: 500;
 }
+.my-logo {
+	width: 50px;
+	height: 50px;
+	border-radius: 50%;
+	margin-left: 5px;
+}
 .mode-button {
 	border: none;
 	font-size: 12px;
 	font-weight: bold;
 	color: #19334d;
 	border-radius: 10px;
-	margin-left: 4px;
+	margin-right: 4px;
+	margin-top: 10px;
 }
 .mode-button:hover {
 	color: #089ddd;
+}
+.menu {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	align-items: center;
+	column-gap: 40px;
 }
 .navbar-menu{
 	display: none;
@@ -645,10 +663,7 @@ p {
 		display: block;
 	}
 	.menu {
-		display: flex;
-		flex-direction: row;
-		justify-content: space-between;
-		align-items: center;
+		column-gap: 1px;
 		width: 100%;
 		padding-bottom: 5px;
 		border-bottom: 1px solid #ddd;
@@ -739,7 +754,14 @@ p {
 	}
 }
 @media screen and (max-width: 500px){
-	
+	body {
+		width: 97%;
+		margin: auto;
+	}
+	.header {
+		width: 97%;
+		margin: auto;
+	}
 	.brand {
 		width: 100%;
 	}
@@ -751,8 +773,8 @@ p {
 		margin-left: 3px;
 	}
 	.mini-container {
-		margin-top: 5px;
-		margin-bottom: 20px;
+		width: 90%;
+		margin: 5px auto 20px auto;
 	}
 	.profile-container {
 		padding-top: 77px;
@@ -790,6 +812,9 @@ p {
 	.logo {
 		width: 7%;
 		height: 30px;
+	}
+	.projects {
+		width: 95%;
 	}
 	.project {
 		background-size: 100% 100%;
