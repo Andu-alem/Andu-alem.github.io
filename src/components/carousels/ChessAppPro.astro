@@ -1,0 +1,27 @@
+---
+import { Image } from "astro:assets"
+import chessImg from "../../assets/chess-app/chess.png"
+import chessImg2 from "../../assets/chess-app/chess2.png"
+---
+<div class="carousel w-full h-[55vh] rounded-xl">
+    <div id="chess-slide1" class="carousel-item relative w-full">
+      <Image
+        src={ chessImg }
+        alt="project-screen-shoot"
+        class="w-full h-full" />
+      <div class="absolute left-5 right-5 top-1/2 flex -translate-y-1/2 transform justify-between">
+        <a href="#chess-slide2" class="btn btn-circle">❮</a>
+        <a href="#chess-slide2" class="btn btn-circle">❯</a>
+      </div>
+    </div>
+    <div id="chess-slide2" class="carousel-item relative w-full">
+      <Image
+        src={ chessImg2 }
+        alt="project-screen-shoot"
+        class="w-full h-full" />
+      <div class="absolute left-5 right-5 top-1/2 flex -translate-y-1/2 transform justify-between">
+        <a href="#chess-slide1" class="btn btn-circle">❮</a>
+        <a href="#chess-slide1" class="btn btn-circle">❯</a>
+      </div>
+    </div>
+</div>

@@ -1,0 +1,10 @@
+@import "tailwindcss";
+@plugin "daisyui" {
+    themes: all;
+}
+
+body {
+    font-family: Inter, 'Helvetica', 'Arial Nova', 'Nimbus Sans', Arial, sans-serif;
+    line-height: 1.7;
+}
+  

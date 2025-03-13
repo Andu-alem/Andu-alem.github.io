@@ -1,0 +1,32 @@
+---
+import Layout from "../layouts/Layout.astro";
+
+---
+
+<Layout>
+  <div class="pb-12 mt-5">
+    <div class="text-xl py-1 flex gap-2">Hey there <div id="wave" class="duration-150">👋</div></div>
+    <div class="text-4xl font-bold">I'm Andualem Fereja</div>
+    <div class="text-2xl py-3 font-bold">Full-Stack Software Engineer</div>
+    <div class="py-2">
+      <text class="text-sm tracking-wider font-light">
+        A seasoned software developer with a Computer Engineering background and proficiency in fullstack web developement using modern web development tools and standards. Whether you need a well-rounded full-stack developer in your team or want a high quality and modern landing page, blog, portfolio, or an e-commerce website feel free to reach me using your choice of provided addresses.
+      </text>
+    </div>
+    <div class="mt-8">
+      <a class="btn" href="/contact-me"> Let's connect!</a>
+      <a href="/projects" class="btn btn-outline ml-5">
+        See My Projects
+      </a>
+    </div>
+  </div>
+</Layout>
+
+<script>
+	import { animate } from "motion"
+	animate('#wave',{
+		rotate: [0,25],
+	},{
+		repeat: 1000
+	})
+</script>

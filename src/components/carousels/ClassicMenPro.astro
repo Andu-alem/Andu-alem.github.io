@@ -1,0 +1,61 @@
+---
+import { Image } from "astro:assets"
+import classic from "../../assets/classic-man/classic.png"
+import detailPage from "../../assets/classic-man/detail-page.png"
+import classicDark from "../../assets/classic-man/products-dark.png"
+import classicLight from "../../assets/classic-man/products-light.png"
+import classicResponsive from "../../assets/classic-man/products-responsive.png"
+
+---
+<div class="carousel w-full h-[55vh] rounded-xl">
+    <div id="carousel-slide1" class="carousel-item relative w-full">
+      <Image
+        src={ classic }
+        alt="project-screen-shoot"
+        class="w-full h-full" />
+      <div class="absolute left-5 right-5 top-1/2 flex -translate-y-1/2 transform justify-between">
+        <a href="#carousel-slide5" class="btn btn-circle">❮</a>
+        <a href="#carousel-slide2" class="btn btn-circle">❯</a>
+      </div>
+    </div>
+    <div id="carousel-slide2" class="carousel-item relative w-full">
+      <Image
+        src={ detailPage }
+        alt="project-screen-shoot"
+        class="w-full h-full" />
+      <div class="absolute left-5 right-5 top-1/2 flex -translate-y-1/2 transform justify-between">
+        <a href="#carousel-slide1" class="btn btn-circle">❮</a>
+        <a href="#carousel-slide3" class="btn btn-circle">❯</a>
+      </div>
+    </div>
+    <div id="carousel-slide3" class="carousel-item relative w-full">
+      <Image
+        src={ classicDark }
+        alt="project-screen-shoot"
+        class="w-full h-full" />
+      <div class="absolute left-5 right-5 top-1/2 flex -translate-y-1/2 transform justify-between">
+        <a href="#carousel-slide2" class="btn btn-circle">❮</a>
+        <a href="#carousel-slide4" class="btn btn-circle">❯</a>
+      </div>
+    </div>
+    <div id="carousel-slide4" class="carousel-item relative w-full">
+      <Image
+        src={ classicLight }
+        alt="project-screen-shoot"
+        class="w-full h-full" />
+      <div class="absolute left-5 right-5 top-1/2 flex -translate-y-1/2 transform justify-between">
+        <a href="#carousel-slide3" class="btn btn-circle">❮</a>
+        <a href="#carousel-slide5" class="btn btn-circle">❯</a>
+      </div>
+    </div>
+    <div id="carousel-slide5" class="carousel-item relative w-full">
+      <Image
+        src={ classicResponsive }
+        alt="project-screen-shoot"
+        class="w-full h-full" />
+      <div class="absolute left-5 right-5 top-1/2 flex -translate-y-1/2 transform justify-between">
+        <a href="#carousel-slide4" class="btn btn-circle">❮</a>
+        <a href="#carousel-slide1" class="btn btn-circle">❯</a>
+      </div>
+    </div>
+</div>

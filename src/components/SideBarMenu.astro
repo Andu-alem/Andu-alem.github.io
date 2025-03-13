@@ -1,0 +1,26 @@
+---
+const { pathname } = Astro.url
+const className= "py-2 px-4 my-1rounded-lg"
+---
+<div class="menu menu-md bg-base-200 w-full">
+    <li>
+        <a href="/" class:list={[className, { 'menu-active':  pathname === '/' }]}>
+            Home
+        </a>
+    </li>
+    <li>
+        <a href="/projects" class:list={[className, { 'menu-active':  pathname === '/projects' }]}>
+            Projects
+        </a>
+    </li>
+    <li>
+        <a href="/skills" class:list={[className, { 'menu-active':  pathname === '/skills' }]}>
+            Skills
+        </a>
+    </li>
+    <li>
+        <a href="/contact-me" class:list={[className, { 'menu-active':  pathname === '/contact-me' }]}>
+            Contact Me
+        </a>
+    </li>
+</div>
