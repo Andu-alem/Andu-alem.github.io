@@ -16,11 +16,11 @@ const path = pathname.replace('/am','')
         </option>
     ))}
 </select>
-<div class="dropdown">
-    <div class="dropdown-trigger">language</div>
-    <div>
+<div class="">
+    <div class="dropdown">language</div>
+    <div class="dropdown-center drop">
         {Object.entries(languages).map(([lang, label]) => (
-            <div>
+            <div class="">
                 {label}
             </div>
         ))}
