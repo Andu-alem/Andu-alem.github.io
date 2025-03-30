@@ -1,0 +1,31 @@
+---
+import Layout from "../../layouts/Layout.astro";
+import { Image } from "astro:assets";
+import type { ImageMetadata } from "astro";
+
+
+const importedImages = import.meta.glob<{ default: ImageMetadata }>('../assets/png/*.png')
+const images = Object.values(importedImages)
+
+---
+
+<Layout title = "Skilles">
+  <div class="flex flex-col sm:flex-row justify-evenly md:px-10 my-7 min-h-[57vh]">
+    <div class="sm:w-1/2 my-3 sm:my-1">
+        <h4 class="text-center sm:text-left font-semibold">ቴክኒካዊ ችሎታዎች</h4>
+        <div class="flex flex-wrap justify-center sm:justify-start gap-3 my-4">
+          {
+            images.map(image => (
+              <Image class="size-7 md:size-10 rounded-lg" src={ image() } alt="image" />
+            ))
+          }
+        </div>
+    </div>
+    <div class="my-3 sm:my-1 text-center sm:text-left text-xs tracking-wider">
+        <h4 class="font-semibold text-sm mb-2">ተጨማሪ ችሎታዎች</h4>
+        <p>ችግር ፈቺነት፣ ለዝርዝር ጉዳዮች ትኩረት መስጠትና የመተንተን ችሎታ</p>
+        <p>ኃላፊነት የሚወስድ እና ተነሳሽ</p>
+        <p>አዳዲስ ነገሮችን ቶሎ የመማርና የመላመድ ችሎታ</p>
+    </div>
+</div>
+</Layout>

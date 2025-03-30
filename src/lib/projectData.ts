@@ -25,7 +25,7 @@ const projects = [{
 },{
     title: "Portfolio",
     subTitle: "Website",
-    description: "A portfolio site template to showcase my skills, works, and certificates. Built using Vue.Js, Vue-Router, and TailwindCSS. Deployed on Netlify",
+    description: "A portfolio site to showcase my skills, works, and certificates. Built using Vue.Js, Vue-Router, and TailwindCSS. Deployed on Netlify",
     features: "Responsive, SPA",
     link: "https://andufereja-portfolio.netlify.app/",
     image: portfolioImg
@@ -61,7 +61,7 @@ const projects = [{
     title: "EventUpdater",
     subTitle: "Event Sharing Platform",
     description: "A web application in which the user can get and post the upcoming events in the town. Aims to be the platform for all events. This platform is built using the MERN stack - React, Material UI, Express.js, MongoDB with MongoDB Atlas as a provider and Mongoose as an ORM and deployed on Render.",
-    features: "Responsive, Dark/Light Mode",
+    features: "Responsive, Dark/Light Mode+++",
     link: "https://eventsupcoming.onrender.com/",
     image: eventUpdaterImg 
 }]
