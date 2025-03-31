@@ -4,32 +4,20 @@ import { getLangFromUrl, useTranslatedPath } from '../i18n/utils';
 
 const lang = getLangFromUrl(Astro.url);
 const translatePath = useTranslatedPath(lang);
-
 const { pathname } = Astro.url
 const path = pathname.replace('/am','')
 ---
-
-<select class="select h-7 w-16 sm:w-24 mx-2" name="" id="opp">
-    {Object.entries(languages).map(([lang, label]) => (
-        <option value={translatePath(path, lang)} onclick="makeAlert('hello')">
-            {label}
-        </option>
-    ))}
-</select>
-<div class="">
-    <div class="dropdown">language</div>
-    <div class="dropdown-center drop">
-        {Object.entries(languages).map(([lang, label]) => (
-            <div class="">
-                {label}
-            </div>
-        ))}
-    </div>
-</div>
-
-<script is:inline>
-    const element = document.getElementById('opp');
-    element.addEventListener('change', function (e) {
-        window.location = '/projects'
-    })
-</script>
+<!-- change popover-1 and --anchor-1 names. Use unique names for each dropdown -->
+<button class="btn btn-ghost" popovertarget="popover-1" style="anchor-name:--anchor-1">
+    { languages[lang] }
+</button>
+<ul class="dropdown menu w-24 rounded-box bg-base-100 shadow-sm"
+    popover id="popover-1" style="position-anchor:--anchor-1">
+    {
+        Object.entries(languages).map(([lang, label]) => (
+            <li>
+                <a href={ translatePath(path, lang) }>{ label }</a>
+            </li>
+        ))
+    }
+</ul>
