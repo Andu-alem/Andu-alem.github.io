@@ -1,12 +1,18 @@
 ---
 import Layout from "../layouts/Layout.astro";
+import { getLangFromUrl } from '../i18n/utils';
+
+const lang = getLangFromUrl(Astro.url);
+const message = lang == 'en' ? "The page you're looking for couldn't be found.":"የሚፈልጉትን ገጽ ማግኘት አልተቻለም"
+const link = lang == 'en' ? "Home":"መነሻ"
+const path = lang == 'en' ? "/":"/am/"
 ---
 
 <Layout title = "404: Not Found" includeSidebar={false}>
   <div class="text-center">
     <h1 class="text-9xl font-bold mb-4">🏝</h1>
     <h1 class="text-9xl font-bold mb-2">404</h1>
-    <h3 class="text-2xl">The page you're looking for couldn't be found.</h3>
-    <a class="btn btn-primary mt-9" href="/">Home</a>
+    <h3 class="text-2xl">{ message }</h3>
+    <a class="btn btn-primary mt-9" href={ path }>{ link }</a>
   </div>
 </Layout>

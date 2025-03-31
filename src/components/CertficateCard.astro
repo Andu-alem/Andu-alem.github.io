@@ -1,0 +1,20 @@
+---
+import { Image } from "astro:assets"
+
+const { imageSrc } = Astro.props
+---
+
+<div class="flex flex-col sm:flex-row gap-4 min-h-[55vh] my-3">
+    <Image
+        src={ imageSrc }
+        alt="project-screen-shoot"
+        class="w-full sm:w-[50%] min-h-[50vh] rounded-lg" />
+    <div class="w-full sm:w-[50%] tracking-wider">
+        <h2 class="text-lg font-semibold">
+            <slot name="title" />
+        </h2>
+        <p class="text-xs my-2">
+            <slot name="description" />
+        </p>
+    </div>
+</div>

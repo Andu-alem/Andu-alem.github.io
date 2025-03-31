@@ -26,6 +26,11 @@ const className= "py-2 px-4 my-1rounded-lg"
         </a>
     </li>
     <li>
+        <a href={ translatePath('/certificates') } class:list={[className, { 'menu-active':  path === '/certificates' }]}>
+            { t('certificates') }
+        </a>
+    </li>
+    <li>
         <a href={ translatePath('/contact-me') } class:list={[className, { 'menu-active':  path === '/contact-me' }]}>
             { t('contact-me') }
         </a>
