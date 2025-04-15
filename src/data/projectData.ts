@@ -6,7 +6,7 @@ import chessAppImg from "../assets/projects/chesszone.png"
 import laravelNextImg from "../assets/projects/lara-next.png"
 import eventUpdaterImg from "../assets/projects/event_shot.jpg"
 import newFormHomeImg from "../assets/projects/newformhome.jpg"
-import supportTicketImg from "../assets/projects/support2.png"
+import supportTicketImg from "../assets/projects/support2.PNG"
 
 
 const projects = [{
