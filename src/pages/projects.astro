@@ -2,6 +2,7 @@
 import Layout from "../layouts/Layout.astro";
 import projects from "@/data/projectData";
 import ProductCard from "@/components/ProductCard.astro";
+import AdditionalProjects from "@/components/AdditionalProjects.astro";
 ---
 
 <Layout title = "Projects">
@@ -11,5 +12,6 @@ import ProductCard from "@/components/ProductCard.astro";
           <ProductCard project={ project } />
         ))
       }
+      <AdditionalProjects />
   </div>
 </Layout>
