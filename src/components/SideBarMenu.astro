@@ -16,22 +16,22 @@ const className= "py-2 px-4 my-1rounded-lg"
         </a>
     </li>
     <li>
-        <a href={ translatePath('/projects') } class:list={[className, { 'menu-active':  path === '/projects' }]}>
+        <a href={ translatePath('/projects') } class:list={[className, { 'menu-active':  path.includes('projects') }]}>
             { t('projects') }
         </a>
     </li>
     <li>
-        <a href={ translatePath('/skills') } class:list={[className, { 'menu-active':  path === '/skills' }]}>
+        <a href={ translatePath('/skills') } class:list={[className, { 'menu-active':  path.includes('skills') }]}>
             { t('skills') }
         </a>
     </li>
     <li>
-        <a href={ translatePath('/certificates') } class:list={[className, { 'menu-active':  path === '/certificates' }]}>
+        <a href={ translatePath('/certificates') } class:list={[className, { 'menu-active':  path.includes('certificates') }]}>
             { t('certificates') }
         </a>
     </li>
     <li>
-        <a href={ translatePath('/contact-me') } class:list={[className, { 'menu-active':  path === '/contact-me' }]}>
+        <a href={ translatePath('/contact-me') } class:list={[className, { 'menu-active':  path.includes('contact-me') }]}>
             { t('contact-me') }
         </a>
     </li>
