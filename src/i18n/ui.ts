@@ -13,6 +13,7 @@ export const languages = {
         '': 'Home',
         'projects': 'Projects',
         'skills': 'Skills',
+        'certificates': 'Certificates',
         'contact-me': 'Contact-me',
     },
     am: {
@@ -20,6 +21,7 @@ export const languages = {
         '': 'መነሻ',
         'projects': 'ፕሮጀክቶች',
         'skills': 'ችሎታዎች',
+        'certificates': 'ሰርተፍኬቶች',
         'contact-me': 'የመገናኛ አማራጮች',
     },
   } as const;
