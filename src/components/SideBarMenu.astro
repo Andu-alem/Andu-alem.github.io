@@ -1,26 +1,33 @@
 ---
+import { getLangFromUrl, useTranslations, useTranslatedPath } from '../i18n/utils';
+
+const lang = getLangFromUrl(Astro.url);
+const t = useTranslations(lang);
+const translatePath = useTranslatedPath(lang);
+
 const { pathname } = Astro.url
+const path = pathname.replace('/am','')
 const className= "py-2 px-4 my-1rounded-lg"
 ---
 <div class="menu menu-md bg-base-200 w-full">
     <li>
-        <a href="/" class:list={[className, { 'menu-active':  pathname === '/' }]}>
-            Home
+        <a href={ translatePath('/') } class:list={[className, { 'menu-active':  path === '/' }]}>
+            { t('') }
         </a>
     </li>
     <li>
-        <a href="/projects" class:list={[className, { 'menu-active':  pathname === '/projects/' }]}>
-            Projects
+        <a href={ translatePath('/projects') } class:list={[className, { 'menu-active':  path === '/projects' }]}>
+            { t('projects') }
         </a>
     </li>
     <li>
-        <a href="/skills" class:list={[className, { 'menu-active':  pathname === '/skills/' }]}>
-            Skills
+        <a href={ translatePath('/skills') } class:list={[className, { 'menu-active':  path === '/skills' }]}>
+            { t('skills') }
         </a>
     </li>
     <li>
-        <a href="/contact-me" class:list={[className, { 'menu-active':  pathname === '/contact-me/' }]}>
-            Contact Me
+        <a href={ translatePath('/contact-me') } class:list={[className, { 'menu-active':  path === '/contact-me' }]}>
+            { t('contact-me') }
         </a>
     </li>
 </div>
