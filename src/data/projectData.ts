@@ -38,18 +38,11 @@ const projects = [{
     link: "https://support-ticketing-system-silk.vercel.app",
     image: supportTicketImg
 },{
-    title: "Portfolio",
-    subTitle: "Website",
-    description: "A modern and sleek portfolio site designed to highlight my skills, completed project, and certifications in a user-friendly and visually appealing format. Built using Vue.Js, Vue-Router, and TailwindCSS. Deployed on Netlify",
-    features: "Skill showcase, Projects Gallary, Certifications, Responsive Design",
-    link: "https://andufereja-portfolio.netlify.app/",
-    image: portfolioImg
-},{
     title: "QuantumBit",
     subTitle: "Technology Institute",
     description: "I designed and developed a compelling landing page for QuantumBit, a Technology Institute, to showcase their courses, expertise, and offerings. The platform combines aesthetic appeal with functionality, delivering a high-performance and SEO-friendly experience. Built using Astro, React, and TailwindCSS.",
     features: "SEO friendly Landing page with Courses, Pricing, FAQ, and  Testimonials, and with Blog functionality. Deployed on Cloudflare.",
-    link: "https://quntum-bit.pages.dev/",
+    link: "https://quantumbit.netlify.app",
     image: quantumbitImg
 },{
     title: "ChessGame",
@@ -65,6 +58,13 @@ const projects = [{
     features: "Product listing page, product detail page, pagination, cart management, and admin functionality.",
     link: "https://github.com/Andu-alem/laravel-next-ecommerce",
     image: laravelNextImg 
+},{
+    title: "Portfolio",
+    subTitle: "Website",
+    description: "A modern and sleek portfolio site designed to highlight my skills, completed project, and certifications in a user-friendly and visually appealing format. Built using Vue.Js, Vue-Router, and TailwindCSS. Deployed on Netlify",
+    features: "Skill showcase, Projects Gallary, Certifications, Responsive Design",
+    link: "https://andufereja-portfolio.netlify.app/",
+    image: portfolioImg
 },{
     title: "EventUpdater",
     subTitle: "Event Sharing Platform",
