@@ -1,33 +1,15 @@
 ---
 import Layout from "../layouts/Layout.astro";
-import QuantumBit from "@/components/projects/QuantumBit.astro";
-import ServiceAd from "@/components/projects/ServiceAd.astro";
-import ChessApp from "@/components/projects/ChessApp.astro";
-import ClassicMen from "@/components/projects/ClassicMen.astro";
-import Portfolio from "@/components/projects/Portfolio.astro";
-import NewForm from "@/components/projects/NewForm.astro";
-import EventUpdater from "@/components/projects/EventUpdater.astro";
-import CoolMarket from "@/components/projects/CoolMarket.astro";
 import projects from "@/lib/projectData";
 import ProductCard from "@/components/ProductCard.astro";
 ---
 
 <Layout title = "Projects">
   <div class="flex flex-col gap-7">
-    <div>
-        {
-          projects.map(project => (
-            <ProductCard project={ project } />
-          ))
-        }
-    </div>
-    <ClassicMen />
-    <ServiceAd />
-    <Portfolio />
-    <CoolMarket />
-    <QuantumBit />
-    <ChessApp />
-    <NewForm />
-    <EventUpdater />
+      {
+        projects.map(project => (
+          <ProductCard project={ project } />
+        ))
+      }
   </div>
 </Layout>
