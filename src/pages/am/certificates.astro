@@ -1,0 +1,48 @@
+---
+import Layout from "../../layouts/Layout.astro"
+import tempo from "../../assets/certificates/tempo.jpg"
+import programmer from "../../assets/certificates/programmer.jpg"
+import ai from "../../assets/certificates/ai-fundamentals.jpg"
+import android from "../../assets/certificates/android-dev.jpg"
+import dataAnalyst from "../../assets/certificates/data-analyst.jpg"
+
+import CertficateCard from "@/components/CertficateCard.astro"
+---
+
+<Layout title = "Certifications">
+  <div class="flex flex-col gap-7">
+    <CertficateCard imageSrc={ ai }>
+      <slot slot="title">Artificial Intelligence Fundamentals</slot>
+      <slot slot="description">
+        Udacity Certificate
+        <a class="btn btn-link text-xs" href="https://www.udacity.com/certificate/e/88ec6d6c-9b8d-11ef-b875-07ced6c7914e" target="_blank">Certficate Link</a>
+      </slot>
+    </CertficateCard>
+    <CertficateCard imageSrc={ dataAnalyst }>
+      <slot slot="title">Data Analysis Fundamentals</slot>
+      <slot slot="description">
+        Udacity Certificate
+        <a class="btn btn-link text-xs" href="https://www.udacity.com/certificate/e/b1d22fdc-68c0-11ef-b60f-f79d8fa633f2" target="_blank">Certficate Link</a>
+      </slot>
+    </CertficateCard>
+    <CertficateCard imageSrc={ programmer }>
+      <slot slot="title">Programming Fundamentals</slot>
+      <slot slot="description">
+        Udacity Certificate
+        <a class="btn btn-link text-xs" href="https://www.udacity.com/certificate/e/32135d0c-6861-11ef-9f30-1763a66b3880" target="_blank">Certficate Link</a>
+      </slot>
+    </CertficateCard>
+    <CertficateCard imageSrc={ android }>
+      <slot slot="title">Android Developer Fundamentals</slot>
+      <slot slot="description">
+        Udacity Certificate
+        <a class="btn btn-link text-xs" href="https://www.udacity.com/certificate/e/64e645e6-6794-11ef-8ad4-af48f6ebe7df" target="_blank">Certficate Link</a>
+      </slot>
+    </CertficateCard>
+    <CertficateCard imageSrc={ tempo }>
+      <slot slot="title">BSc. in Electrical and Computer Engineering</slot>
+      <slot slot="description">Educational Certificate</slot>
+    </CertficateCard>
+  </div>
+
+</Layout>
