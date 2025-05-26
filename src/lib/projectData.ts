@@ -18,29 +18,29 @@ const projects = [{
 },{
     title: "ServiceAd",
     subTitle: "Share your service, Find other's",
-    description: "A platform where users promote their services and businesses share location/address of their business. Beside promoting their service the platform aims to help users to find a service or business near them or by searching the name. Built using Next.js, Tailwind CSS, Next-Auth, MongoDB, and mongoose. The site deployed on Vercel and MongoDB Atlas for database hosting.",
+    description: "A platform designed to empower users to promote their services and businesses while making it easier for others to find what they need. The site provides an intuitive way for users to share their business locations and addresses, ensuring seamless connections between service providers and customers. Built using Next.js, Tailwind CSS, Next-Auth, MongoDB, and mongoose. The site deployed on Vercel and MongoDB Atlas for database hosting.",
     features: "Services and Businesses listing page, detail page, service creation and manage functionality, search, filter, and rate service functionality",
     link: "https://servicead.vercel.app",
     image: serviceadImg 
 },{
     title: "Portfolio",
     subTitle: "Website",
-    description: "A portfolio site to showcase my skills, works, and certificates. Built using Vue.Js, Vue-Router, and TailwindCSS. Deployed on Netlify",
-    features: "Responsive, SPA",
+    description: "A modern and sleek portfolio site designed to highlight my skills, completed project, and certifications in a user-friendly and visually appealing format. Built using Vue.Js, Vue-Router, and TailwindCSS. Deployed on Netlify",
+    features: "Skill showcase, Projects Gallary, Certifications, Responsive Design",
     link: "https://andufereja-portfolio.netlify.app/",
     image: portfolioImg
 },{
     title: "QuantumBit",
     subTitle: "Technology Institute",
-    description: "I developed visually apealing, seo friendly landing page with a blog functionality for a Technology Institute using Astro, React, and TailwindCSS.",
+    description: "I designed and developed a compelling landing page for QuantumBit, a Technology Institute, to showcase their courses, expertise, and offerings. The platform combines aesthetic appeal with functionality, delivering a high-performance and SEO-friendly experience. Built using Astro, React, and TailwindCSS.",
     features: "SEO friendly Landing page with Courses, Pricing, FAQ, and  Testimonials, and with Blog functionality. Deployed on Cloudflare.",
     link: "https://quntum-bit.pages.dev/",
     image: quantumbitImg
 },{
     title: "ChessGame",
     subTitle: "Progressive Web App",
-    description: "The app allows user to choose their opponent Ai or a friend and to choose their prefernce color scheme for the board and difficulty level. It has all the functionalities of a chess. This fully functional web based chess application built using React, Tailwind CSS and integrated it with an AI chess engine Stockfish. The app is deployed on Render.",
-    features: "Board Theme selection, AI or Friend choice, Difficulty level selection",
+    description: "I developed ChessGame, a progressive web app that offers users a complete chess experience with versatile features and modern design. The app is designed for both chess enthusiasts and casual players, providing a platform to play against an AI opponent powerd by Stockfish or a friend. Built using React, Tailwind CSS and integrated it with an AI chess engine Stockfish. The app is deployed on Render.",
+    features: "Board Customization, Opponent Options, Difficulty Levels, Full Chess Functionality, Progressive Web App - works offline",
     link: "https://react-chess-app-uixz.onrender.com/",
     image: chessAppImg
 },{
@@ -53,15 +53,15 @@ const projects = [{
 },{
     title: "NewForm",
     subTitle: "Furniture company",
-    description: "NewForm furniture is a big furiniture company that excels in creating beautiful and comfortable furnitures for houses and for offices. Visit their website. The website is powered by Astro with Svelte and Tailwind CSS and deployed on Verceel.",
-    features: "Responsive",
+    description: "NewForm furniture is a big furiniture company specializing in creating beautiful and comfortable furnitures for homes and offices. To showcase their exceptional products, I developed a visually striking and performanc-focused website highlighting their craftsmanship and commitment to quality. The website is powered by Astro with Svelte and Tailwind CSS and deployed on Verceel.",
+    features: "Responsive Design, Product Showcase, SEO Optimzation",
     link: "https://newformfurniture.vercel.app/",
     image: newFormImg 
 },{
     title: "EventUpdater",
     subTitle: "Event Sharing Platform",
-    description: "A web application in which the user can get and post the upcoming events in the town. Aims to be the platform for all events. This platform is built using the MERN stack - React, Material UI, Express.js, MongoDB with MongoDB Atlas as a provider and Mongoose as an ORM and deployed on Render.",
-    features: "Responsive, Dark/Light Mode+++",
+    description: "i developed Event Updater, a dynamic web application designed to empower users to discover and share upcoming events in their town. The platform aims to be the ultimate go-to destination for all event-related information, fostering local connections and engagement. This platform is built using the MERN stack - React, Material UI, Express.js, MongoDB with MongoDB Atlas as a provider and Mongoose as an ORM and deployed on Render.",
+    features: "Responsive Design, Event Listing, Event Creation and Sharing, Search and Filter",
     link: "https://eventsupcoming.onrender.com/",
     image: eventUpdaterImg 
 }]
