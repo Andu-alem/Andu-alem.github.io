@@ -1,0 +1,32 @@
+---
+import Layout from "../../layouts/Layout.astro";
+
+---
+
+<Layout>
+  <div class="pb-12 mt-5">
+    <div class="text-xl py-1 flex gap-2">ሠላም ሠላም <div id="wave" class="duration-150">👋</div></div>
+    <div class="text-4xl font-bold">አንዱአለም ፈረጃ ነኝ</div>
+    <div class="text-2xl py-3 font-bold">Full-Stack Software Engineer</div>
+    <div class="py-2">
+      <text class="text-sm tracking-wider font-light">
+        በfullstack ዌብሳይት ግንባታ በቂ ልምድ ያለኝ እና የComputer Engineering ተመራቂ ስሆን ዘመናዊ ቴክኖሎጂዎችን በመጠቀም ደረጃውን የጠበቀ ዌብሳይት እና አፕልኬሽኖችን ለድርጅትዎ፣ ለቢዝነስዎ፣ እንዲሁም ለግላዊ አገልግሎቶች እገነባለሁ። በቂ እዉቀት ያለው software Engineer ለመቀጠር ክፈለጉ ወይም ለግልዎ ወይ ለቢዝነስዎ ማንኛዉንም ዓይነት ዌብሳት ማሠራት ክፈለጉ በተገለጹት አማራጮች ያግኙኝ በደስታ እቀበልዎታለሁ።
+      </text>
+    </div>
+    <div class="mt-8">
+      <a class="btn" href="/am/contact-me"> የመገናኛ አማራጮች!</a>
+      <a href="/am/projects" class="btn btn-outline ml-5">
+        የተሰሩ ፕሮጀክቶች
+      </a>
+    </div>
+  </div>
+</Layout>
+
+<script>
+	import { animate } from "motion"
+	animate('#wave',{
+		rotate: [0,25],
+	},{
+		repeat: 1000
+	})
+</script>
