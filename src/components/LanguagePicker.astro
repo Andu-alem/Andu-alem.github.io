@@ -1,0 +1,35 @@
+---
+import { languages } from '../i18n/ui';
+import { getLangFromUrl, useTranslatedPath } from '../i18n/utils';
+
+const lang = getLangFromUrl(Astro.url);
+const translatePath = useTranslatedPath(lang);
+
+const { pathname } = Astro.url
+const path = pathname.replace('/am','')
+---
+
+<select class="select h-7 w-16 sm:w-24 mx-2" name="" id="opp">
+    {Object.entries(languages).map(([lang, label]) => (
+        <option value={translatePath(path, lang)} onclick="makeAlert('hello')">
+            {label}
+        </option>
+    ))}
+</select>
+<div class="dropdown">
+    <div class="dropdown-trigger">language</div>
+    <div>
+        {Object.entries(languages).map(([lang, label]) => (
+            <div>
+                {label}
+            </div>
+        ))}
+    </div>
+</div>
+
+<script is:inline>
+    const element = document.getElementById('opp');
+    element.addEventListener('change', function (e) {
+        window.location = '/projects'
+    })
+</script>
