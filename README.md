@@ -19,7 +19,7 @@ Love to create inovative IoT projects, blending hardware and software to solve r
 JavaScript, TypeScript, SQL, PHP, Python, and Java
 
 **Frontend**:
-React, Vue, Next.js, Astro, TailwindCSS, ShadCN
+React, Vue, Next.js, Astro, TailwindCSS, ShadCN, DaisyUi
 
 **Backend**:
 Node.js, Express.js, Laravel, Apollo GraphQL, Strapi
@@ -38,6 +38,8 @@ _Tech Stack: Next.js, Prisma, PostgreSQL, TailindCSS, Better-Auth, Zustand._ **[
 Connected businesses and customers with a dynamic, full-stack web app.
 _Tech Stack: Next.js, TailwindCSS, Next-Auth, Mongoose, MongoDB._
 **[Live Link](https://servicead.vercel.app)**
+- **CoolMarket Commerce**: Built a feature-rich, responsive platform with product search, pagination, admin dashboard, and more.
+_Tech Stack: Next.js, TailwindCSS, Laravel, and REST apis._ 
 - **Website for Tech institute**: Built a responsive and beautiful website for QuantumBit Technology Institute with Blog functionality.
 _Tech Stack: Astro, React, TailwindCSS, and Farmer Motion._ 
 **[Live Link](https://quntum-bit.pages.dev/)**
