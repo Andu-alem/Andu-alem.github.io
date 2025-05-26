@@ -1,4 +1,5 @@
 ---
+import { getLangFromUrl } from '../i18n/utils';
 import BaseHead from "../components/BaseHead.astro";
 import Header from "../components/Header.astro";
 import Footer from "../components/Footer.astro";
@@ -6,6 +7,8 @@ import SideBar from "../components/Sidebar.astro";
 import { ClientRouter } from "astro:transitions";
 
 import { SITE_TITLE, SITE_DESCRIPTION } from "../config";
+
+const lang = getLangFromUrl(Astro.url);
 
 const {
   image='/social_img.png',
@@ -17,7 +20,7 @@ const {
 ---
 
 <!doctype html>
-<html lang="en" data-theme="corporate">
+<html lang={lang} data-theme="corporate">
   <head>
     <BaseHead title={title} description={description} image={image} , ogType={ogType} />
     <ClientRouter />
