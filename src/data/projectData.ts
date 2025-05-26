@@ -6,10 +6,18 @@ import chessAppImg from "../assets/projects/chesszone.png"
 import laravelNextImg from "../assets/projects/lara-next.png"
 import eventUpdaterImg from "../assets/projects/event_shot.jpg"
 import newFormHomeImg from "../assets/projects/newformhome.jpg"
-import supportTicketImg from "../assets/projects/support2.PNG"
+import supportTicketImg from "../assets/projects/support.png"
+import fintrackImg from "../assets/projects/fintrack.png"
 
 
 const projects = [{
+    title: "FinTrack",
+    subTitle: "A telegram mini app",
+    description: "FinTrack is a modern and responsive Telegram Mini App designed to help users effortlessly track their income, expenses, and budgets within the Telegram ecosystem. Built with a mobile-first approach, the app provides a seamless user experience, adapting to Telegram's native theme (light/dark) using the Telegram WebApp SDK (TWA SDK).",
+    features: "Dashboard Overview, Income and Expense Tracking, Budget Management, Analytics, Telegram Integration, Responsive Design",
+    link: "https://t.me/fintrack_app_bot/FinTrack",
+    image: fintrackImg
+},{
     title: "Classice Men's",
     subTitle: "For Fashionista!",
     description: "A comprehensive, feature rich, and responsive e-commerce website for Ideal Men's Fashion store using a modern tech stack including Next.js, TypeScript, Shadcn, Farmer Motion, Tailwind CSS, Zustand, Better-Auth, Prisma, and PostgreSQL. The site is deployed on Vercel, leveraging Vercel Blob Store ad Neon PostgreSQL DB provider.",
