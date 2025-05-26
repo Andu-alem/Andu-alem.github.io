@@ -1,7 +1,7 @@
 ---
 import Layout from "../layouts/Layout.astro";
 import projects from "@/data/projectData";
-import ProductCard from "@/components/ProductCard.astro";
+import ProjectCard from "@/components/ProjectCard.astro";
 import AdditionalProjects from "@/components/AdditionalProjects.astro";
 ---
 
@@ -9,7 +9,7 @@ import AdditionalProjects from "@/components/AdditionalProjects.astro";
   <div class="flex flex-col gap-7">
       {
         projects.map(project => (
-          <ProductCard project={ project } />
+          <ProjectCard project={ project } />
         ))
       }
       <AdditionalProjects />
