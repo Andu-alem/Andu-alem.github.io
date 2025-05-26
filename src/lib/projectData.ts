@@ -26,7 +26,7 @@ const projects = [{
     title: "Portfolio",
     subTitle: "Website",
     description: "A portfolio site template to showcase my skills, works, and certificates. Built using Vue.Js, Vue-Router, and TailwindCSS. Deployed on Netlify",
-    features: "",
+    features: "Responsive, SPA",
     link: "https://andufereja-portfolio.netlify.app/",
     image: portfolioImg
 },{
@@ -54,14 +54,14 @@ const projects = [{
     title: "NewForm",
     subTitle: "Furniture company",
     description: "NewForm furniture is a big furiniture company that excels in creating beautiful and comfortable furnitures for houses and for offices. Visit their website. The website is powered by Astro with Svelte and Tailwind CSS and deployed on Verceel.",
-    features: "",
+    features: "Responsive",
     link: "https://newformfurniture.vercel.app/",
     image: newFormImg 
 },{
     title: "EventUpdater",
     subTitle: "Event Sharing Platform",
     description: "A web application in which the user can get and post the upcoming events in the town. Aims to be the platform for all events. This platform is built using the MERN stack - React, Material UI, Express.js, MongoDB with MongoDB Atlas as a provider and Mongoose as an ORM and deployed on Render.",
-    features: "",
+    features: "Responsive, Dark/Light Mode",
     link: "https://eventsupcoming.onrender.com/",
     image: eventUpdaterImg 
 }]
