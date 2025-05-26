@@ -8,6 +8,7 @@ import eventUpdaterImg from "../assets/projects/event_shot.jpg"
 import newFormHomeImg from "../assets/projects/newformhome.jpg"
 import supportTicketImg from "../assets/projects/support.png"
 import fintrackImg from "../assets/projects/fintrack.png"
+import nextPortfolioImg from "../assets/projects/next-portfolio.png"
 
 
 const projects = [{
@@ -66,6 +67,13 @@ const projects = [{
     features: "Product listing page, product detail page, pagination, cart management, and admin functionality.",
     link: "https://github.com/Andu-alem/laravel-next-ecommerce",
     image: laravelNextImg 
+},{
+    title: "Portfolio Next",
+    subTitle: "Website",
+    description: "A modern and sleek portfolio site designed to highlight my skills, completed project, and certifications in a user-friendly and visually appealing format. Built using Next.js, TailwindCSS, and Shadcn/ui. Deployed on Netlify",
+    features: "Skill showcase, Projects Gallary, Dark/Light Mode Responsive Design",
+    link: "https://andudev.netlify.app/",
+    image: nextPortfolioImg
 },{
     title: "Portfolio",
     subTitle: "Website",
