@@ -5,7 +5,8 @@ import serviceadImg from "../assets/projects/serviceadv.png"
 import chessAppImg from "../assets/projects/chesszone.png"
 import laravelNextImg from "../assets/projects/lara-next.png"
 import eventUpdaterImg from "../assets/projects/event_shot.jpg"
-import newFormImg from "../assets/projects/newform.jpg"
+import newFormHomeImg from "../assets/projects/newformhome.jpg"
+import supportTicketImg from "../assets/projects/support2.png"
 
 
 const projects = [{
@@ -22,6 +23,20 @@ const projects = [{
     features: "Services and Businesses listing page, detail page, service creation and manage functionality, search, filter, and rate service functionality",
     link: "https://servicead.vercel.app",
     image: serviceadImg 
+},{
+    title: "NewFormHome",
+    subTitle: "Furniture company",
+    description: "Modern multi-page site with product listings, cart, and blog. The initial structure and layout were rapidly scaffolded using Vercel v0, which I then extensively customized by adjusting the generated code, fixing layout and functionality issues, and integrating it with a Strapi CMS backend for content management. Cloudinary is used for media storage, Built using Next.js, Tailwind, Shadcn/ui, v0.dev, strapi, cloudinary and deployed on vercel and render",
+    features: "Responsive Design, Product Showcase, Blog, SEO Optimzation",
+    link: "https://newformhome.vercel.app",
+    image: newFormHomeImg 
+},{
+    title: "Support Ticketing System",
+    subTitle: "",
+    description: "Users can issue support tickets; admins manage and update statuses. Built using React, React-Router, ContextAPI, Tailwind, Express.js, MongoDB, Node.js, Mongoose and deployed on Vercel and Render.",
+    features: "Signup/Login, Ticket Creation, Ticket Managment, Responsive Design",
+    link: "https://support-ticketing-system-silk.vercel.app",
+    image: supportTicketImg
 },{
     title: "Portfolio",
     subTitle: "Website",
@@ -50,13 +65,6 @@ const projects = [{
     features: "Product listing page, product detail page, pagination, cart management, and admin functionality.",
     link: "https://github.com/Andu-alem/laravel-next-ecommerce",
     image: laravelNextImg 
-},{
-    title: "NewForm",
-    subTitle: "Furniture company",
-    description: "NewForm furniture is a big furiniture company specializing in creating beautiful and comfortable furnitures for homes and offices. To showcase their exceptional products, I developed a visually striking and performanc-focused website highlighting their craftsmanship and commitment to quality. The website is powered by Astro with Svelte and Tailwind CSS and deployed on Verceel.",
-    features: "Responsive Design, Product Showcase, SEO Optimzation",
-    link: "https://newformfurniture.vercel.app/",
-    image: newFormImg 
 },{
     title: "EventUpdater",
     subTitle: "Event Sharing Platform",
