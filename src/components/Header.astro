@@ -1,5 +1,11 @@
 ---
 import ThemeToggle from "./ThemeToggle.astro"
+import LanguagePicker from "./LanguagePicker.astro";
+import { getLangFromUrl, useTranslations, useTranslatedPath } from '../i18n/utils';
+
+const lang = getLangFromUrl(Astro.url);
+const t = useTranslations(lang);
+const translatePath = useTranslatedPath(lang);
 ---
 <div
   class="sticky top-0 z-30 flex h-16 w-full justify-center bg-opacity-90 backdrop-blur transition-all duration-100 bg-base-100 text-base-content shadow-sm"
@@ -12,10 +18,11 @@ import ThemeToggle from "./ThemeToggle.astro"
         </svg>
       </label>
     </div>
-    <div class="navbar-center">
-      <a class="btn btn-ghost normal-case text-xl" href="/">Andualem Fereja ⚡️</a>
+    <div class="navbar-center w-1/2">
+      <a class="btn btn-ghost normal-case text-sm sm:text-lg md:text-xl" href={ translatePath('/') }>{ t('brand') } ⚡️</a>
     </div>
     <div class="navbar-end md:w-full">
+        <LanguagePicker />
         <ThemeToggle />
     </div>
   </div>
