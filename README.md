@@ -8,17 +8,24 @@ The site is **multilingual (Amharic and English)** and supports **dark/light the
 
 ---
 
+## Screenshot
+
+![Screenshot](public/social_img.png)
+
+
+---
+
 ## 🚀 Features
 
 * **⚡ Modern Tech Stack** – Built with Astro, styled with Tailwind CSS and DaisyUI
 * **🌐 Multilingual** – Supports Amharic and English
 * **🌙 Theme Toggle** – Dark and light mode support
 * **📱 Responsive Design** – Optimized for all devices
-* **🏠 Home Section** – Introduction with name, title, and bio
-* **🛠️ Skills Section** – Categorized technology stack overview
-* **📁 Projects Section** – Featured projects with images and descriptions
-* **🎓 Certificates Section** – Showcase of earned certificates
-* **📬 Contact Section** – Accessible contact form and social links
+* **🏠 Home Page** – Introduction with name, title, and bio
+* **🛠️ Skills Page** – Categorized technology stack overview
+* **📁 Projects Page** – Featured projects with images and descriptions
+* **🎓 Certificates Page** – Showcase of earned certificates
+* **📬 Contact Page** – Accessible contact form and social links
 
 ---
 
