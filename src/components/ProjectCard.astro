@@ -6,7 +6,8 @@ const { project: {
     subTitle,
     description,
     link,
-    features
+    features,
+    techStack
 } } = Astro.props
 ---
 
@@ -16,15 +17,20 @@ const { project: {
         alt="project-screen-shoot"
         class="w-full lg:w-5/12 rounded-lg" />
     <div class="card-body w-full lg:w-7/12">
-        <h2 class="card-title font-semibold">
-            { title } - <span class="text-xs">{ subTitle }</span>
+        <h2 class="card-title font-semibold flex flex-wrap">
+            <span>{ title }</span> - <span class="text-xs">{ subTitle }</span>
         </h2>
-        <p class="lg:text-xs tracking-wide">{ description }</p>
-        <p class="lg:text-xs tracking-wide">
+        <p class="text-xs tracking-wide">{ description }</p>
+        <p class="text-xs tracking-wide">
             <strong>Key Features: </strong> { features }
         </p>
+        <div class="flex gap-1 flex-wrap">
+            { techStack.map((item: string) => (
+                <span class="badge badge-neutral badge-xs">{ item }</span>
+            ) ) }
+        </div>
         <div class="card-actions justify-center lg:justify-end">
-                <a class="btn btn-primary text-xs" href={ link } target="_blank">Live Link</a>
+                <a class="btn btn-sm btn-primary text-xs" href={ link } target="_blank">Live Link</a>
         </div>
     </div>
 </div>
