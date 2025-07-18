@@ -12,6 +12,14 @@ import newFormHomeImg from "../assets/projects/newformhome.jpg"
 import supportTicketImg from "../assets/projects/support.png"
 
 const projects = [{
+    title: "በAI የታገዘ Portfolio",
+    subTitle: "የግል ዌብሳይት",
+    description: "የAI ረዳት መልስ እንዲመልስ የተካተተበትና ዘመናዊ፣ ላይን ሳቢ እንዲሁም ከተጠቃሚዎች ስክሪን ጋር እራሱን እንዲያስተካክል ተደርጎ ዲዛይን የተደረገ የግል ክህሎትን እና ስራዎችን ማሳያና ማስተዋወቂያ ዌብሳይት።",
+    features: "AI Integration, የከህሎት ማሳያ, የስራዎች ማሳያና ዝርዝር, ሳቢና Responsive ዲዛይን",
+    techStack: ["Vercel AI Sdk", "TypeScript", "Next.js", "Tailwind", "Shadcn/ui", "Netlify"],
+    link: "https://andudev.netlify.app/",
+    image: nextPortfolioImg
+},{
     title: "FinTrack",
     subTitle: "የቴሌግራም ሚኒ አፕ",
     description: "FinTrack ፡ የቴሌግራም ሚኒ አፕ ሲሆን ተጠቃሚዎች ከቴሌግራም ሳይወጡ ወጪያቸዉን፣ ገቢያቸውና በጀታቸውን በቀላሉ እንዲከታተሉና እንዲያስተዳድሩ ያስችላል። ይህ አፕሊኬሽን ላጠቃቀም ቀላል፣ ላይን ሳቢ፣ እራሱን ከተጠቃሚዎች የከለር ምርጫ ጋር እንዲያዛምድ አንዲሁም የመረጃዎችን ማጠቃለያ በቻርት እንዲያሳይ ተደርጎ ዲዛይን ተደርጓል።",
@@ -59,14 +67,6 @@ const projects = [{
     techStack: ["TypeScript", "React", "React-Router", "ContextAPI", "Tailwind", "Mongodb", "Mongoose", "Express.js", "JWT", "Mongodb-Atlas", "Vercel", "Render", "Vitest & RTL"],
     link: "https://support-ticketing-system-silk.vercel.app",
     image: supportTicketImg
-},{
-    title: "Portfolio Next",
-    subTitle: "የግል ዌብሳይት",
-    description: "ዘመናዊ፣ ላይን ሳቢ፣ ላጠቃቀም ቀላል እንዲሁም ከተጠቃሚዎች ስክሪን ጋር እራሱን እንዲያስተካክል ተደርጎ ዲዛይን የተደረገ የግል ክህሎትን እና ስራዎችን ማሳያና ማስተዋወቂያ ዌብሳይት።",
-    features: "የከህሎት ማሳያ, የስራዎች ማሳያና ዝርዝር, ሳቢና Responsive ዲዛይን",
-    techStack: ["TypeScript", "Next.js", "Tailwind", "Shadcn/ui", "Netlify"],
-    link: "https://andudev.netlify.app/",
-    image: nextPortfolioImg
 },{
     title: "QuantumBit",
     subTitle: "የቴክኖሎጂ ተቋም",

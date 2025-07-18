@@ -13,6 +13,14 @@ import devFriendImg from "../assets/projects/devfriend.png"
 
 
 const projects = [{
+    title: "AI Powerd Portfolio",
+    subTitle: "Website",
+    description: "A modern and sleek portfolio site with AI integration as an assistant designed to highlight my skills, completed project, and certifications in a user-friendly and visually appealing format. Built using Next.js, TailwindCSS, Shadcn/ui, and AI sdk. Deployed on Netlify",
+    features: "AI Integration, Skill Showcase, Projects Gallary, Dark/Light Mode Responsive Design",
+    techStack: ["Vercel AI sdk", "TypeScript", "Next.js", "Tailwind", "Shadcn/ui", "Netlify"],
+    link: "https://andudev.netlify.app/",
+    image: nextPortfolioImg
+},{
     title: "FinTrack",
     subTitle: "A telegram mini app",
     description: "FinTrack is a modern and responsive Telegram Mini App designed to help users effortlessly track their income, expenses, and budgets within the Telegram ecosystem. Built with a mobile-first approach, the app provides a seamless user experience, adapting to Telegram's native theme (light/dark) using the Telegram WebApp SDK (TWA SDK).",
@@ -84,14 +92,6 @@ const projects = [{
     techStack: ["Next.js", "Tailwind", "Laravel", "Sanctum"],
     link: "https://github.com/Andu-alem/laravel-next-ecommerce",
     image: laravelNextImg 
-},{
-    title: "Portfolio Next",
-    subTitle: "Website",
-    description: "A modern and sleek portfolio site designed to highlight my skills, completed project, and certifications in a user-friendly and visually appealing format. Built using Next.js, TailwindCSS, and Shadcn/ui. Deployed on Netlify",
-    features: "Skill showcase, Projects Gallary, Dark/Light Mode Responsive Design",
-    techStack: ["TypeScript", "Next.js", "Tailwind", "Shadcn/ui", "Netlify"],
-    link: "https://andudev.netlify.app/",
-    image: nextPortfolioImg
 },{
     title: "Portfolio",
     subTitle: "Website",
